@@ -49,3 +49,9 @@ v10 Bug671839【M1721】【VOLTE】【衰退】卡1插入移动卡打开volte建
 v11 Bug#679757: 【M1721M】【移动出货版】【电话逻辑】联通卡PIN码界面拨打紧急号码会注册到电信网络，挂断电话后未返回PIN码界面可直接操作手机
     联通mbn nv73825配置成0
     AA_CU_mcfg_sw.mbn   版本号：0x07031522
+    
+        （1）查看nv850（CT电信默认配置为cs only）从而导致电信卡4G无法上网
+        PS域(Packet SwitchedDomain)为分组（交换）域，CS域(Circuit SwitchedDomain)为电路（交换）域。
+        通俗的说，打电话语音信号走的是CS，上网等数据业务信号走PS。
+    （2）查看nv74（CMCC移动卡默认配置为enable）nv74是控制电话自动接听，因此出现移动卡设备呼入会出现自动接听。
+
