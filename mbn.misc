@@ -1,0 +1,51 @@
+Notice：此txt文件记录mbn ota；
+    
+V01
+   #543003【M1721】【K81721CQ DVT1阶段NV 更新20170526】
+   AA_CMCC_mcfg_sw.mbn 版本号：0x0702209A
+   AA_CT_mcfg_sw.mbn   版本号：0x07011406
+   AA_CU_mcfg_sw.mbn   版本号：0x07011521
+   AA_ROW_mcfg_sw.mbn  版本号：0x07010844
+
+V02
+   bug532281: 【M1721】【通话控制】测试机插入电信卡拨打电话，提示”无法连接到移动网络“
+   /policyman/carrier_policy.xml路径
+   modem_proc\mmcp\policyman\configurations\Carrier\OpenMarket\7+5_mode\CT\1xSRLTE\openMarket\volte\carrier_policy.xml修改为
+   modem_proc\mmcp\policyman\configurations\Carrier\OpenMarket\7+5_mode\CT\1xSRLTE\openMarket\carrier_policy.xml
+   AA_CT_mcfg_sw.mbn   版本号：0x07021408
+   
+   
+V03 bug 556827【M1721】【网络管理】加密手机卡1插入移动卡，卡2插入联通卡，卡2不驻网，卡1只能驻到2G网络
+    重新用MZ KEY签名MBN
+    
+V04 bug556608 【M1721】【网络管理】移动卡通话中网络回落至2G，挂断电话恢复4G网络需要10秒以上 20170701
+    AA_CMCC_mcfg_sw.mbn 版本号：0x0702209C
+
+v05 bug615871
+【M1721联通入库】【预测试】【DM适配】电信卡为副卡时，连接WIFI上报的NCLS值为空，关于手机中网络类型显示“IWLAN”
+    set 70315->0
+    AA_CT_mcfg_sw.mbn   版本号：0x07031408
+    
+v06 Bug585718PIN码界面拨打119时会注册到电信网络
+    nv73825配置成0，备份v04的配置
+    AA_CMCC_mcfg_sw.mbn   版本号：0x0703209C
+
+v07 Bug614923开启VoLTE后，呼出电话对方不接听，振铃约30s后本机自动挂断
+    NV67281配置成60000
+    AA_CMCC_mcfg_sw.mbn   版本号：0x0704209C
+
+v08 Bug633613【M1721】【深圳】测试机澳门卡在内地无法上网 
+    NV65602加入EHPLMN
+    AA_CT_mcfg_sw.mbn   版本号：0x07041408
+
+v09 Bug623537【M1721联通入库】【预测试】【基础业务】电信卡+联通3G卡进行热插拔，卡二驻网后掉网再驻网，且在上网过程中也会出现掉网
+    将NV73708修改emm_plmn_block_on_rej_15_8 = 1
+    AA_CU_mcfg_sw.mbn   版本号：0x07021522
+
+v10 Bug671839【M1721】【VOLTE】【衰退】卡1插入移动卡打开volte建立1A1H通话过程后，使用配合机再次呼叫测试机，提示正在通话中打不进去
+    将NV67348 qipcall_third_call_support_reqd修改为1。
+    AA_CMCC_mcfg_sw.mbn   版本号：0x0705209C
+
+v11 Bug#679757: 【M1721M】【移动出货版】【电话逻辑】联通卡PIN码界面拨打紧急号码会注册到电信网络，挂断电话后未返回PIN码界面可直接操作手机
+    联通mbn nv73825配置成0
+    AA_CU_mcfg_sw.mbn   版本号：0x07031522
