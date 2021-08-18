@@ -1,0 +1,2079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NvData McfgXmlVersion="2.0">
+
+    <!-- legal nv start -->
+    <NvConfigurationData carrierIndex="0" version="data.0.0" type="1" />
+    <NvItemData id="0" name="esn" description="Electronic Serial Number" comment="" category="Security" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="esn" description="" comment="" sizeOf="1" type="uint32">1</Member>
+    </NvItemData>
+    <NvItemData id="1" name="esn_chksum" description="Electronic Serial Number Checksum" comment="" category="Security" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="esn_chksum" description="" comment="" sizeOf="1" type="uint32">1</Member>
+    </NvItemData>
+    <NvItemData id="2" name="verno_maj" description="NV Major Version Number" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="verno_maj" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="3" name="verno_min" description="NV Minor Version Number" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="verno_min" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="4" name="scm" description="Station Class Mark" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="scm" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="5" name="slot_cycle_index" description="Slot Cycle Index" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="slot_cycle_index" description="" comment="" sizeOf="1" type="int8">1</Member>
+    </NvItemData>
+    <NvItemData id="6" name="mob_cai_rev" description="Mobile CAI Revision Number" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="mob_cai_rev" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="7" name="mob_firm_rev" description="Mobile Firmware Revision Number" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="mob_firm_rev" description="" comment="" sizeOf="1" type="uint16">1</Member>
+    </NvItemData>
+    <NvItemData id="8" name="mob_model" description="Mobile Model" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="mob_model" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="9" name="config_chksum" description="Configuration Checksum" comment="" category="Security" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="config_chksum" description="" comment="" sizeOf="1" type="uint16">1</Member>
+    </NvItemData>
+    <NvItemData id="10" name="pref_mode" description="Digital/Analog Mode Preference" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="nam" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="mode" description="" comment="" sizeOf="1" type="uint16">
+            <Enum name="CDMA Then Analog" value="0"></Enum>
+            <Enum value="1" name="Digital Only"></Enum>
+            <Enum value="2" name="Analog Then CDMA"></Enum>
+            <Enum value="3" name="Analog Only"></Enum>
+            <Enum value="4" name="Determine Mode Automatically"></Enum>
+            <Enum value="5" name="Emergency Mode"></Enum>
+            <Enum value="6" name="Restrict To Home Only"></Enum>
+            <Enum value="9" name="CDMA Only"></Enum>
+            <Enum value="10" name="HDR Only"></Enum>
+            <Enum value="11" name="CDMA And AMPS Only"></Enum>
+            <Enum value="12" name="GPS Only"></Enum>
+            <Enum value="13" name="GSM Only"></Enum>
+            <Enum value="14" name="WCDMA Only"></Enum>
+            <Enum value="15" name="WLAN Only"></Enum>
+            <Enum value="16" name="Any But HDR"></Enum>
+            <Enum value="17" name="GSM And WCDMA Only"></Enum>
+            <Enum value="18" name="Digital Less HDR Only"></Enum>
+            <Enum value="19" name="CDMA And HDR Only"></Enum>
+            <Enum value="20" name="CDMA AMPS And HDR Only"></Enum>
+            <Enum value="21" name="CDMA And WLAN Only"></Enum>
+            <Enum value="22" name="HDR And WLAN Only"></Enum>
+            <Enum value="23" name="CDMA HDR And WLAN Only"></Enum>
+            <Enum value="24" name="GSM And WLAN Only"></Enum>
+            <Enum value="25" name="WCDMA And WLAN Only"></Enum>
+            <Enum value="26" name="GW And WLAN Only"></Enum>
+            <Enum value="27" name="CDMA AMPS HDR And WLAN Only"></Enum>
+            <Enum value="28" name="CDMA AMPS And WLAN Only"></Enum>
+            <Enum value="29" name="Any But HDR And WLAN"></Enum>
+            <Enum value="30" name="LTE Only"></Enum>
+            <Enum value="31" name="GWL"></Enum>
+            <Enum value="32" name="CDMA And LTE Only"></Enum>
+            <Enum value="33" name="HDR And LTE Only"></Enum>
+            <Enum value="34" name="GSM And LTE Only"></Enum>
+            <Enum value="35" name="WCDMA And LTE Only"></Enum>
+            <Enum value="36" name="CDMA HDR And LTE Only"></Enum>
+            <Enum value="37" name="CDMA GSM And LTE Only"></Enum>
+            <Enum value="38" name="CDMA WCDMA And LTE Only"></Enum>
+            <Enum value="39" name="HDR GSM And LTE Only"></Enum>
+            <Enum value="40" name="HDR WCDMA And LTE Only"></Enum>
+            <Enum value="41" name="CDMA LTE And WLAN Only"></Enum>
+            <Enum value="42" name="HDR LTE And WLAN Only"></Enum>
+            <Enum value="43" name="GSM LTE And WLAN Only"></Enum>
+            <Enum value="44" name="WCDMA LTE And WLAN Only"></Enum>
+            <Enum value="45" name="CDMA HDR LTE And WLAN Only"></Enum>
+            <Enum value="46" name="CDMA GSM LTE And WLAN Only"></Enum>
+            <Enum value="47" name="CDMA WCDMA LTE And WLAN Only"></Enum>
+            <Enum value="48" name="HDR GSM LTE And WLAN Only"></Enum>
+            <Enum value="49" name="HDR WCDMA LTE And WLAN Only"></Enum>
+            <Enum value="50" name="Any But WLAN"></Enum>
+            <Enum value="51" name="CDMA GSM And WCDMA Only"></Enum>
+            <Enum value="52" name="CDMA HDR GSM And WCDMA Only"></Enum>
+            <Enum value="53" name="TDSCDMA Only"></Enum>
+            <Enum value="54" name="TDSCDMA And GSM"></Enum>
+            <Enum value="55" name="TDSCDMA GSM And LTE"></Enum>
+            <Enum value="56" name="CDMA HDR And GSM Only"></Enum>
+            <Enum value="57" name="CDMA And GSM Only"></Enum>
+            <Enum value="58" name="TDSCDMA GSM WCDMA And LTE Only"></Enum>
+            <Enum value="59" name="TDSCDMA GSM And WCDMA Only"></Enum>
+            <Enum value="60" name="TDSCDMA And LTE Only"></Enum>
+            <Enum value="61" name="CDMA HDR GSM WCDMA And LTE"></Enum>
+            <Enum value="62" name="CDMA GSM WCDMA And LTE"></Enum>
+            <Enum value="63" name="TDSCDMA And WCDMA"></Enum>
+            <Enum value="64" name="TDS WCDMA LTE"></Enum>
+            <Enum value="65" name="CDMA HDR GSM TDS LTE"></Enum>
+            <Enum value="66" name="CDMA GW TDS"></Enum>
+            <Enum value="67" name="CDMA HDR GW TDS"></Enum>
+            <Enum value="68" name="CDMA HDR GSM LTE"></Enum>
+            <Enum value="69" name="HDR TDS WCDMA"></Enum>
+            <Enum value="70" name="HDR TDS WCDMA LTE"></Enum>
+            <Enum value="71" name="NR5G Only"></Enum>
+        </Member>
+    </NvItemData>
+    <NvItemData id="71" name="Banner" description="" comment="" category="Display" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="letters" description="" comment="" sizeOf="13" type="string">TEST</Member>
+    </NvItemData>
+    <NvItemData id="74" name="auto_answer" description="Auto Answer Setting" comment="" category="Display" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="enable" description="" comment="" sizeOf="1" type="uint8">
+            <Enum value="0" name="DISABLED"></Enum>
+            <Enum value="1" name="ENABLED"></Enum>
+        </Member>
+        <Member name="rings" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="75" name="auto_redial" description="Auto Redial Setting" comment="" category="Display" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="enable" description="" comment="" sizeOf="1" type="uint8">
+            <Enum value="0" name="DISABLED"></Enum>
+            <Enum value="1" name="ENABLED"></Enum>
+        </Member>
+        <Member name="rings" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="409" name="tty" description="" comment="" category="Display" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="tty" description="" comment="" sizeOf="1" type="uint8">3</Member>
+    </NvItemData>
+    <NvItemData id="441" name="band_pref" description="Band Class Preference" comment="" category="CDMA" subscription_mask="0x07" mcfgAttributes="0x39" mcfgVariant="1">
+        <Member name="nam" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="band" description="" comment="" sizeOf="1" type="uint16">
+            <Enum value="1" name="BC0 A"></Enum>
+            <Enum value="2" name="BC0 B"></Enum>
+            <Enum value="3" name="BC0"></Enum>
+            <Enum value="4" name="BC1"></Enum>
+            <Enum value="16" name="BC3"></Enum>
+            <Enum value="32" name="BC4"></Enum>
+            <Enum value="64" name="BC5"></Enum>
+            <Enum value="128" name="GSM DCS 1800"></Enum>
+            <Enum value="256" name="GSM Extended GSM 900"></Enum>
+            <Enum value="65535" name="Any"></Enum>
+        </Member>
+    </NvItemData>
+    <NvItemData id="447" name="bd_addr" description="Bluetooth Device Address" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="bd_addr" description="" comment="" sizeOf="6" type="uint8"></Member>
+    </NvItemData>
+    <NvItemData id="452" name="gps1_lock" description="GPSOne Lock" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gps1_lock" description="" comment="" sizeOf="1" type="uint32">0</Member>
+    </NvItemData>
+    <NvItemData id="453" name="ftm_mode" description="Factory Testmode" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="ftm_mode" description="" comment="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="FTM close"></Enum>
+            <Enum value="1" name="FTM open"></Enum>
+        </Member>
+    </NvItemData>
+    <NvItemData id="550" name="ue_imei_hex" description="UE IMEI" comment="" category="Display" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="ue_imei" description="" comment="" sizeOf="9" type="uint8"></Member>
+    </NvItemData>
+    <NvItemData id="550" name="ue_imei_bcd" description="UE IMEI" comment="" category="Display" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="ue_imei" description="" comment="" sizeOf="ue_imei_dec!" type="null">864376026015007</Member>
+    </NvItemData>
+    <NvItemData id="818" name="hdr_rx_diversity_ctrl" description="HDR RX Diversity Control" comment="" category="HDR" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="hdr_rx_diversity_ctrl" description="" comment="" sizeOf="1" type="uint8"></Member>
+    </NvItemData>
+    <NvItemData id="848" name="acq_order_pref" description="Acquisition Order Preference" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="nam" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="acq_order" description="" comment="" sizeOf="1" type="uint8"></Member>
+    </NvItemData>
+    <NvItemData id="849" name="net_sel_mode_pref" description="Network Selection Mode Preference" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="nam" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="net_sel_mode" description="" comment="" sizeOf="1" type="uint8"></Member>
+    </NvItemData>
+    <NvItemData id="850" name="srv_domain_pref" description="Service Domain Preference" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="nam" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="srv_domain" description="" comment="" sizeOf="1" type="uint16">2
+            <Enum value="0" name="CS Only"></Enum>
+            <Enum value="1" name="PS Only"></Enum>
+            <Enum value="2" name="CS PS"></Enum>
+            <Enum value="3" name="Any"></Enum>
+        </Member>
+    </NvItemData>
+    <NvItemData id="855" name="rtre_config" description="RTRE Configuration" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="rtre_config" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="880" name="rrc_integrity_enabled" description="RRC Integrity Enabled" comment="" category="WCDMA" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="rrc_integrity_enabled" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="881" name="rrc_ciphering_enabled" description="RRC Ciphering Enabled" comment="" category="WCDMA" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="rrc_ciphering_enabled" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="882" name="rrc_fake_security_enabled" description="RRC Fake Security Enabled" comment="" category="WCDMA" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="rrc_fake_security_enabled" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="909" name="sms_gw_bearer_pref" category="Display" comment="" description="UMTS SMS Bearer Preference" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="sms_gw_bearer_pref" sizeOf="1" type="uint8">2</Member>
+    </NvItemData>
+    <NvItemData id="946" name="band_pref_16_31" description="Expand Band Preference 16 To 32 Bits" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="nam" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="band_pref_16_31" description="" comment="" sizeOf="1" type="uint16">1</Member>
+    </NvItemData>
+    <NvItemData id="947" name="gprs_anite_gcf" description="Enable Anite GCF 51.010" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="anite_gcf" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="1016" name="sms_gw_cb_config" category="System" comment="" description="UMTS Cell Broadcast SMS Carrier Configuration" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="sms_gw_cb_config" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="1017" name="sms_gw_cb_user_pref" category="System" comment="" description="UMTS Cell Broadcast SMS User Preference" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="sms_gw_cb_user_pref" sizeOf="1" type="uint8">2</Member>
+    </NvItemData>
+    <NvItemData id="1018" name="cdma_rx_diversity_ctrl" description="CDMA Receive Diversity Control" comment="" category="CDMA" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="cdma_rx_diversity_ctrl" description="" comment="" sizeOf="1" type="uint16">1</Member>
+    </NvItemData>
+    <NvItemData id="1030" name="force_ue_sgsnr_r99" description="Force UE SGSNR GSM R99 Version" comment="" category="GPRS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="force_ue_sgsnr_r99" description="" comment="" sizeOf="1" type="uint8">2</Member>
+    </NvItemData>
+    <NvItemData id="1031" name="force_ue_mscr_r99" description="Force UE MSCR GSM R99 Version" comment="" category="GPRS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="force_ue_mscr_r99" description="" comment="" sizeOf="1" type="uint8">2</Member>
+    </NvItemData>
+    <NvItemData id="1896" name="ipv6_enabled" description="Ipv6 Enabled" comment="" category="Data" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="ipv6_enabled" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="1920" name="aagps_positioning_modes_supported" description="AAGPS Positioning Modes Supported" comment="" category="AAGPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="aagps_positioning_modes_supported" description="" comment="" sizeOf="1" type="uint32">1</Member>
+    </NvItemData>
+    <NvItemData id="1930" name="aagps_emergency_services_spprt" description="AAGPS Emergency Services Support" comment="" category="AAGPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="aagps_emergency_services_spprt" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="1943" name="meid" description="Mobile Equipment Identifier" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="meid" description="" comment="" sizeOf="1" type="uint64">1</Member>
+    </NvItemData>
+    <NvItemData id="1993" name="gps1_vx_lcs_agent" description="GPSOne Vx LCS Agent" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gps1_vx_lcs_agent" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="1994" name="gps1_vx_app_trusted_settings" description="GPSOne Vx Application Trusted Settings" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gps1_vx_app_trusted_settings" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="1995" name="gps1_vx_ni_teleservice_id" description="GPSOne Vx Dedicated SMS Teleservice Identifier" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gps1_vx_ni_teleservice_id" description="" comment="" sizeOf="1" type="uint16">1</Member>
+    </NvItemData>
+    <NvItemData id="2497" name="factory_data_1" description="Factory Data Storage Area 1" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="FACTORY_DATA_1" description="" comment="" sizeOf="128" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="2787" name="aagps_default_presupl_ue_timer1_value" description="AAGPS Default Presupl Ue Timer1 Value" comment="" category="AAGPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="aagps_default_presupl_ue_timer1_value" description="" comment="" sizeOf="1" type="uint32">1</Member>
+    </NvItemData>
+    <NvItemData id="2788" name="aagps_default_presupl_ue_timer2_value" description="AAGPS Default Presupl Ue Timer2 Value" comment="" category="AAGPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="aagps_default_presupl_ue_timer2_value" description="" comment="" sizeOf="1" type="uint32">1</Member>
+    </NvItemData>
+    <NvItemData id="2789" name="aagps_default_presupl_ue_timer3_value" description="AAGPS Default Presupl Ue Timer3 Value" comment="" category="AAGPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="aagps_default_presupl_ue_timer3_value" description="" comment="" sizeOf="1" type="uint32">1</Member>
+    </NvItemData>
+    <NvItemData id="2824" name="device_serial_no_sn" description="Device Serial Number" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="device_serial_no" description="" comment="" sizeOf="16" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="2954" name="band_pref_32_63" description="Bits 32 To 63 Of Band Pref" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="nam" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="band" description="" comment="" sizeOf="1" type="uint32">1</Member>
+    </NvItemData>
+    <NvItemData id="3006" name="ms_sms_max_number_of_sms" category="Factory" comment="" description="Maximum number of SMS allowed on device." mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="ms_sms_max_number_of_sms" sizeOf="1" type="uint16">23</Member>
+    </NvItemData>
+    <NvItemData id="3520" name="gps1_seedpos_option" description="Seed Position Engine Option Mask" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="seedpos_option_type" description="Seed Position Engine Option Mask" comment="" sizeOf="1" type="int16">65535</Member>
+    </NvItemData>
+    <NvItemData id="3532" name="sms_mo_retry_period" description="SMS MO Retry Period" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="sms_mo_retry_period" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="3533" name="sms_mo_retry_interval" description="MO retry interval in seconds" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="sms_mo_retry_interval" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="3628" name="dtm_feature_support" description="Flag indicating DTM support" comment="" category="GPRS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="dtm_feature_support" description="" comment="" sizeOf="1" type="bool">0</Member>
+    </NvItemData>
+    <NvItemData id="3629" name="dtm_multislot_class" description="DTM multislot class" comment="" category="GPRS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="dtm_multislot_class" description="" comment="" sizeOf="1" type="uint8">0</Member>
+    </NvItemData>
+    <NvItemData id="3635" name="sd_cfg_items" description="Various configurable SD values." comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="version" description="" comment="" sizeOf="1" type="uint16">3</Member>
+        <Member name="count" description="" comment="" sizeOf="1" type="uint16">25</Member>
+        <Member name="items" description="" comment="" sizeOf="25" type="uint32">60</Member>
+    </NvItemData>
+    <NvItemData id="3758" name="aagps_use_transport_security" description="Enable User Plane Secure Transport" comment="" category="AAGPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="use_security" description="Enable User Plane Secure Transport" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="4228" name="sms_mo_channel" description="boolean stating if SMS should be sent on access channel" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="channel_preference" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="4205" name="uim_config_params" description="UIM Configuration Parameters" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="additional_delay_for_atr" description="" comment="" sizeOf="1" type="uint16">0</Member>
+        <Member name="future_use[0]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[1]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[2]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[3]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[4]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[5]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[6]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[7]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[8]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[9]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[10]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[11]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[12]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[13]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[14]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[15]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[16]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[17]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[18]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[19]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[20]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[21]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[22]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[23]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[24]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[25]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[26]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[27]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[28]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[29]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[30]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[31]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[32]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[33]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[34]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[35]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[36]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[37]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[38]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[39]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[40]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[41]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[42]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[43]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[44]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[45]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[46]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[47]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[48]" description="" comment="" sizeOf="1" type="uint8">10</Member>
+        <Member name="future_use[49]" description="" comment="" sizeOf="1" type="uint8">5</Member>
+        <Member name="future_use[50]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[51]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[52]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[53]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[54]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[55]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[56]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[57]" description="" comment="" sizeOf="1" type="uint8">15</Member>
+        <Member name="future_use[58]" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="future_use[59]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[60]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[61]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[62]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[63]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[64]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[65]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[66]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[67]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[68]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[69]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[70]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[71]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[72]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[73]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[74]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[75]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[76]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[77]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[78]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="future_use[79]" description="" comment="" sizeOf="1" type="uint8">0</Member>
+    </NvItemData>
+    <NvItemData id="4627" name="gps1_xtra_enabled" description="Enable/Disable gpsOneXTRA feature" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gps1_xtra_enabled" description="Enable/Disable gpsOneXTRA feature" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="4628" name="gps1_xtra_download_interval" description="Number of hours between automatic downloads" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gps1_xtra_download_interval" description="Number of hours between automatic downloads" comment="" sizeOf="1" type="uint16">24</Member>
+    </NvItemData>
+    <NvItemData id="4629" name="gps1_xtra_num_download_attempts" description="Number of unsuccessful download attempts before aborting (xtra client)" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gps1_xtra_num_download_attempts" description="Number of unsuccessful download attempts before aborting (xtra client)" comment="" sizeOf="1" type="uint8">3</Member>
+    </NvItemData>
+    <NvItemData id="4630" name="gps1_xtra_time_between_attempts" description="Number of minutes between download attempts" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gps1_xtra_time_between_attempts" description="Number of minutes between download attempts" comment="" sizeOf="1" type="uint8">10</Member>
+    </NvItemData>
+    <NvItemData id="4631" name="gps1_xtra_auto_download_enabled" description="Enable/disable automatic periodic downloads of gpsOneXTRA files" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gps1_xtra_auto_download_enabled" description="Enable/disable automatic periodic downloads of gpsOneXTRA files" comment="" sizeOf="1" type="bool">0</Member>
+    </NvItemData>
+    <NvItemData id="4678" name="wlan_mac_address" description="WLAN MAC Address" comment="" category="WLAN" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="wlan_mac_address" description="" comment="" sizeOf="6" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="4703" name="cgps_umts_pde_server_addr_url" description="UMTS PDE Server Address URL" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="cgps_umts_pde_server_addr_url" description="" comment="" sizeOf="128" type="string">supl.google.com:7275</Member>
+    </NvItemData>
+    <NvItemData id="4707" name="cgps_mo_method" description="MO Method" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="cgps_mo_method" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="4722" name="nas_release_compliance" category="Factory" comment="" description="Indicates the current Specs release supported by NAS." mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="nas_release_compliance" sizeOf="1" type="uint8">3</Member>
+    </NvItemData>
+    <NvItemData id="4927" name="gps1_xtra_time_info_enabled" description="Enable/disable feature" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gps1_xtra_time_info_enabled" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="5153" name="ue_imeisv_svn" description="UE IMEI Software Version Number" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="ue_imeisv_svn" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvItemData>
+    <NvItemData id="5593" name="toolkit_env_retry_flag" description="Flag specifies whether envelope retry should be attempted or not" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="toolkit_env_retry_flag" description="Flag specifies whether envelope retry should be attempted or not" comment="" sizeOf="1" type="bool"></Member>
+    </NvItemData>
+    <NvItemData id="5598" name="meid_me" description="MEID ME" comment="" category="System" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="meid_me" description="" comment="" sizeOf="1" type="uint64">1</Member>
+    </NvItemData>
+    <NvItemData id="6792" name="gnss_supl_version" description="SUPL Version" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gnss_SUPL_Version" description="" comment="" sizeOf="1" type="uint32">131072</Member>
+    </NvItemData>
+    <NvItemData id="6828" name="LTE_BC_CONFIG" category="VOIP" comment="" description="LTE BC Config" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="lte_bc_config" sizeOf="1" type="uint64">10</Member>
+        <Member comment="" description="" name="lte_bc_config_ext" sizeOf="1" type="uint64">10</Member>
+    </NvItemData>
+    <NvItemData id="6830" name="cs_to_voip_fallback_timer" category="VOIP" comment="" description="Time after which a 911 call attempt should fallback from CS to voip" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="Time after which a 911 call attempt should fallback from CS to voip" name="cs_to_voip_fallback_timer" sizeOf="1" type="uint8">10</Member>
+    </NvItemData>
+    <NvItemData id="6831" name="voip_cancel_retry_timer" category="VOIP" comment="" description="Timer started after 911 call attempted over voip is cancelled by user" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="Timer started after 911 call attempted over voip is cancelled by user" name="voip_cancel_retry_timer" sizeOf="1" type="uint8">10</Member>
+    </NvItemData>
+    <NvItemData id="6850" name="umts_amr_codec_preference_config" ategory="GSM" comment="" description="This item specifies UMTS AMR CODEC user preferences for G and W RATs" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="This item specifies UMTS AMR CODEC user preferences for G and W RATs" name="umts_amr_codec_preference_config" sizeOf="1" type="uint8">15</Member>
+    </NvItemData>
+    <NvItemData id="6853" name="oem_item_1" ategory="Factory" comment="" description="OEM ITEM 1" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="company" sizeOf="1" type="uint32">
+            <Enum value="1" name="xiaomi"></Enum>
+        </Member>
+        <Member comment="" description="" name="product_type" sizeOf="1" type="uint32">15</Member>
+        <Member comment="" description="" name="rat_cap" sizeOf="1" type="uint32">
+            <Enum value="1" name="All"></Enum>
+        </Member>
+        <Member comment="" description="" name="version" sizeOf="1" type="uint32">1</Member>
+        <Member comment="" description="" name="cust_type" sizeOf="1" type="uint32">1</Member>
+    </NvItemData>
+    <NvItemData id="6854" name="oem_item_2" ategory="Factory" comment="" description="OEM ITEM 2" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="oem_item_2" sizeOf="31" type="uint32">0</Member>
+    </NvItemData>
+    <NvItemData id="6855" name="oem_item_3" ategory="Factory" comment="" description="OEM ITEM 3" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="oem_item_3" sizeOf="31" type="uint32">0</Member>
+    </NvItemData>
+    <NvItemData id="6856" name="oem_item_4" ategory="Factory" comment="" description="OEM ITEM 4" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="oem_item_4" sizeOf="31" type="uint32">0</Member>
+    </NvItemData>
+    <NvItemData id="6857" name="oem_item_5" ategory="Factory" comment="" description="OEM ITEM 5" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="oem_item_5" sizeOf="31" type="uint32">0</Member>
+    </NvItemData>
+    <NvItemData id="6858" name="oem_item_6" ategory="Factory" comment="" description="OEM ITEM 6" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="oem_item_6" sizeOf="31" type="uint32">0</Member>
+    </NvItemData>
+    <NvItemData id="6859" name="oem_item_7" ategory="Factory" comment="" description="OEM ITEM 7" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="oem_item_7" sizeOf="31" type="uint32">0</Member>
+    </NvItemData>
+    <NvItemData id="6860" name="oem_item_8" ategory="Factory" comment="" description="OEM ITEM 8" mcfgAttributes="0x19" mcfgVariant="1" subscription_mask="0x07">
+        <Member comment="" description="" name="oem_item_8" sizeOf="31" type="uint32">0</Member>
+    </NvItemData>
+    <NvItemData id="6862" name="nv_ehrpd_auth_in_usim_i" description="In eHRPD to decide whether authentication to be done on USIM or S/W" comment="" category="Data" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="Mode" description="In eHRPD to decide whether authentication to be done on USIM or S/W" comment="" sizeOf="1" type="uint8">
+            <Enum value="0" name="S/W"></Enum>
+            <Enum value="1" name="USIM"></Enum>
+        </Member>
+    </NvItemData>
+    <NvItemData id="7165" name="gnss_oem_feature_mask" description="OEM feature mask" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="1">
+        <Member name="gnss_OEM_Feature_Mask" description="" comment="" sizeOf="1" type="uint32">4608</Member>
+    </NvItemData>
+    <!-- legal nv end -->
+
+    <!-- legal efs start -->
+    <NvEfsItemData id="65602" name="ehplmn" description="The List of Equivalent HPLMN" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/nas/ehplmn">
+        <Member name="ehplmn" description="" comment="" sizeOf="61" type="uint8">5 100 240 0 100 240 32 100 240 112 100 240 128 100 240 64 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="65633" name="lte_bandpref" description="" comment="" category="MMode" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/mmode/lte_bandpref">
+        <Member name="lte_bandpref" description="" comment="" sizeOf="1" type="uint64">
+            <Bitmask bit="0" name="LTE B1"></Bitmask>
+            <Bitmask bit="1" name="LTE B2"></Bitmask>
+            <Bitmask bit="2" name="LTE B3"></Bitmask>
+            <Bitmask bit="3" name="LTE B4"></Bitmask>
+            <Bitmask bit="4" name="LTE B5"></Bitmask>
+            <Bitmask bit="5" name="LTE B6"></Bitmask>
+            <Bitmask bit="6" name="LTE B7"></Bitmask>
+            <Bitmask bit="7" name="LTE B8"></Bitmask>
+            <Bitmask bit="8" name="LTE B9"></Bitmask>
+            <Bitmask bit="9" name="LTE B10"></Bitmask>
+            <Bitmask bit="10" name="LTE B11"></Bitmask>
+            <Bitmask bit="11" name="LTE B12"></Bitmask>
+            <Bitmask bit="12" name="LTE B13"></Bitmask>
+            <Bitmask bit="13" name="LTE B14"></Bitmask>
+            <Bitmask bit="14" name="LTE B15"></Bitmask>
+            <Bitmask bit="15" name="LTE B16"></Bitmask>
+            <Bitmask bit="16" name="LTE B17"></Bitmask>
+            <Bitmask bit="17" name="LTE B18"></Bitmask>
+            <Bitmask bit="18" name="LTE B19"></Bitmask>
+            <Bitmask bit="19" name="LTE B20"></Bitmask>
+            <Bitmask bit="20" name="LTE B21"></Bitmask>
+            <Bitmask bit="21" name="LTE B22"></Bitmask>
+            <Bitmask bit="22" name="LTE B23"></Bitmask>
+            <Bitmask bit="23" name="LTE B24"></Bitmask>
+            <Bitmask bit="24" name="LTE B25"></Bitmask>
+            <Bitmask bit="25" name="LTE B26"></Bitmask>
+            <Bitmask bit="26" name="LTE B27"></Bitmask>
+            <Bitmask bit="27" name="LTE B28"></Bitmask>
+            <Bitmask bit="28" name="LTE B29"></Bitmask>
+            <Bitmask bit="29" name="LTE B30"></Bitmask>
+            <Bitmask bit="30" name="LTE B31"></Bitmask>
+            <Bitmask bit="31" name="LTE B32"></Bitmask>
+            <Bitmask bit="32" name="LTE B33"></Bitmask>
+            <Bitmask bit="33" name="LTE B34"></Bitmask>
+            <Bitmask bit="34" name="LTE B35"></Bitmask>
+            <Bitmask bit="35" name="LTE B36"></Bitmask>
+            <Bitmask bit="36" name="LTE B37"></Bitmask>
+            <Bitmask bit="37" name="LTE B38"></Bitmask>
+            <Bitmask bit="38" name="LTE B39"></Bitmask>
+            <Bitmask bit="39" name="LTE B40"></Bitmask>
+            <Bitmask bit="40" name="LTE B41"></Bitmask>
+            <Bitmask bit="41" name="LTE B42"></Bitmask>
+            <Bitmask bit="42" name="LTE B43"></Bitmask>
+            <Bitmask bit="45" name="LTE B46"></Bitmask>
+            <Bitmask bit="59" name="LTE B60"></Bitmask>
+        </Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="65733" name="gnss_xtrat_feature_control" description="XTRA-T Feature Control" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/gps/cgps/ulp/tle/gnss_xtrat_feature_control">
+        <Member name="gnss_xtrat_feature_control" description="" comment="" sizeOf="1" type="uint8">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="65777" name="ue_usage_setting" category="MMode" comment="" description="UE usage setting" fullpathname="/nv/item_files/modem/mmode/ue_usage_setting" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="ue_usage_setting" sizeOf="1" type="uint8">
+            <Enum value="0" name="UE_USAGE_SETTING_VOICE_CENTRIC"></Enum>
+            <Enum value="1" name="UE_USAGE_SETTING_DATA_CENTRIC"></Enum>
+        </Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="65778" name="lte_disable_duration" category="MMode" comment="" description="Duration to disable LTE when CS services are not available" fullpathname="/nv/item_files/modem/mmode/lte_disable_duration" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Duration to disable LTE when CS services are not available" name="lte_disable_duration" sizeOf="1" type="uint32">12</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="66048" name="voice_domain_pref" category="MMode" comment="" description="Voice Domain Preference" fullpathname="/nv/item_files/modem/mmode/voice_domain_pref" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="sys_voice_domain_pref_e_type" sizeOf="1" type="uint8">
+            <Enum value="0" name="SYS_VOICE_DOMAIN_PREF_CS_VOICE_ONLY"></Enum>
+            <Enum value="1" name="SYS_VOICE_DOMAIN_PREF_IMS_PS_VOICE_ONLY"></Enum>
+            <Enum value="2" name="SYS_VOICE_DOMAIN_PREF_CS_VOICE_PREFFERED"></Enum>
+            <Enum value="3" name="SYS_VOICE_DOMAIN_PREF_IMS_PS_VOICE_PREFFERED"></Enum>
+        </Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="66051" name="tput_opt_params" description="Configurable parameters for throughput optimization" comment="" category="Data" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/data/common/tput_opt_params">
+        <Member name="back_pressure_removal" description="Configurable parameters for TCP throughput optimization" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="um_wm_params_valid" description="Flag to indicate whether WM params in EFS are valid" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="ul_wm_high_level" description="UL WM high level" comment="" sizeOf="1" type="uint32">0</Member>
+        <Member name="ul_wm_low_level" description="UL WM low level" comment="" sizeOf="1" type="uint32">0</Member>
+        <Member name="ul_wm_dne_level" description="UL WM DNE level" comment="" sizeOf="1" type="uint32">0</Member>
+        <Member name="dl_wm_high_level" description="DL WM high level" comment="" sizeOf="1" type="uint32">0</Member>
+        <Member name="dl_wm_low_level" description="DL WM low level" comment="" sizeOf="1" type="uint32">0</Member>
+        <Member name="dl_wm_dne_level" description="DL WM DNE level" comment="" sizeOf="1" type="uint32">0</Member>
+        <Member name="tx_timestamp_timer_val" description="Tx timestamp item duration" comment="" sizeOf="1" type="uint32">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="66472" name="sms_domain_pref" category="MMode" comment="" description="SMS domain preference" fullpathname="/nv/item_files/modem/mmode/sms_domain_pref" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="SMS domain preference" name="sys_sms_domain_pref_e_type" sizeOf="1" type="int8">
+            <Enum value="-1" name="SYS_SMS_DOMAIN_PREF_NONE"></Enum>
+            <Enum value="0" name="SYS_SMS_DOMAIN_PREF_PS_SMS_NOT_ALLOWED"></Enum>
+            <Enum value="1" name="SYS_SMS_DOMAIN_PREF_PS_SMS_PREF"></Enum>
+            <Enum value="2" name="SYS_SMS_DOMAIN_PREF_MAX"></Enum>
+        </Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="66473" name="sms_mandatory" category="MMode" comment="" description="SMS mandatory for device" fullpathname="/nv/item_files/modem/mmode/sms_mandatory" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="SMS mandatory for device" name="sms_mandatory" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="67208" name="tcp_ack_prio" description="TCP ACK Priority" comment="" category="Data" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/data/protocols/tcp_ack_prio">
+        <Member name="tcp_ack_priority" description="" comment="" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="67217" name="gnss_agps_rat_pref_config" description="AGPS RAT Preference" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/gps/cgps/sm/gnss_agps_rat_pref_config">
+        <Member name="umts_lte_prefered" description="Whether UMTS/LTE to be prefered over other RAT's when camped on more than one RAT." comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="agps_rat_enable_bitmask" description="Bit mask to enable/disable AGPS on RAT's" comment="" sizeOf="1" type="int16">65535</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="67218" name="IMS_enable" category="IMS" comment="" description="Enable or disable IMS task" fullpathname="/nv/item_files/ims/IMS_enable" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Enable or disable IMS task" name="IMS_enable" sizeOf="1" type="uint8">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="67225" name="gnss_lpp_enable" category="GPS" comment="" description="Use LPP when on LTE" fullpathname="/nv/item_files/gps/cgps/sm/gnss_lpp_enable" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Use LPP when on LTE" name="gnss_lpp_enable" sizeOf="1" type="uint8">3</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="67275" name="nas_srvcc_support" category="MMode" comment="" description="To enable/disable capability indication for SRVCC from EUTRAN to UTRAN" fullpathname="/nv/item_files/modem/nas/nas_srvcc_support" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="srvcc_support" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="67291" name="internal_auth" description="1 = credentials from NV, 0 = credentials passed from client" comment="" category="Data" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/data/3gpp2/internal_auth">
+        <Member name="internal_auth" description="1 = credentials from NV, 0 = credentials passed from client" comment="" sizeOf="1" type="uint8">
+            <Enum value="0" name="Credentials From Client"></Enum>
+            <Enum value="1" name="Credentials From NV"></Enum>
+        </Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="67293" name="wcdma_rrc_band_priority_config" description="will have list of frequency bands" comment="" category="Data" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/wcdma/rrc/wcdma_rrc_band_priority_config">
+        <Member name="band_priority_list" description="" comment="" sizeOf="10" type="uint32">33 0 0 0 0 0 0 0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="67311" name="tds_bandpref" description="User preferred TD-SCDMA band preference" comment="" category="MMode" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/mmode/tds_bandpref">
+        <Member name="tds_bandpref" description="User preferred TD-SCDMA band preference" comment="" sizeOf="1" type="uint64">33 0 0 0 0 0 0 0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="69673" name="ims_operation_mode" category="IMS" comment="" description="ims operation mode selection" fullpathname="/nv/item_files/ims/ims_operation_mode" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="ims operation mode selection" name="ims_operation_mode" sizeOf="1" type="uint8">2</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="69689" name="ims_user_agent" category="IMS" comment="" description="User Agent string that needs to be sent with SIP message" fullpathname="/nv/item_files/ims/ims_user_agent" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="User Agent string that needs to be sent with SIP message" name="ims_user_agent" sizeOf="1024" type="string" />
+    </NvEfsItemData>
+    <NvEfsItemData id="69734" name="forced_irat" description="" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/nas/forced_irat">
+        <Member name="forced_irat" description="Indicates if the feature that allows NAS to force IRAT to LTE is enabled" comment="" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="70189" name="tdscdma_op_plmn_list" description="List of TDSCDMA PLMNs" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/nas/tdscdma_op_plmn_list">
+        <Member name="tdscdma_op_plmn_list" description="List of TDSCDMA PLMNs" comment="" sizeOf="61" type="uint8"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="70210" name="uim_hw_config" description="HW Configuration" comment="" category="UIM" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/uim/uimdrv/uim_hw_config">
+        <Member name="version" description="List of TDSCDMA PLMNs" comment="" sizeOf="1" type="uint8">4
+            <Enum value="0" name="VER_0"></Enum>
+            <Enum value="1" name="VER_1"></Enum>
+            <Enum value="2" name="VER_2"></Enum>
+            <Enum value="3" name="VER_3"></Enum>
+            <Enum value="4" name="VER_4"></Enum>
+        </Member>
+        <Member name="UIM_BATT_ALARM_GPIO_NUM" comment="" description="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM_BATT_ALARM_GPIO_FUNC_SELECTION" comment="" description="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM_BATT_ALARM_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM_BATT_ALARM_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[0].DISABLE_UIM" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="UIM[0].ENABLE_UIM_HOTSWAP" description="" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="UIM[0].UIM_HOTSWAP_POLARITY" description="" comment="" sizeOf="1" type="uint8">1
+            <Enum value="0" name="ACTIVE_LOW"></Enum>
+            <Enum value="1" name="ACTIVE_HIGH"></Enum>
+        </Member>
+        <Member name="UIM[0].UIM_CONTROLLER_IRQ_NUM" description="" comment="" sizeOf="1" type="uint16">465</Member>
+        <Member name="UIM[0].UIM_UART" description="" comment="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="BADGER_MSS_UIM0_UART_DM"></Enum>
+            <Enum value="1" name="BADGER_MSS_UIM1_UART_DM"></Enum>
+            <Enum value="4" name="UIM_SPCOMM_INTERFACE"></Enum>
+        </Member>
+        <Member name="UIM[0].UIM_UART_IRQ_NUM" description="" comment="" sizeOf="1" type="uint16">469</Member>
+        <Member name="UIM[0].UIM_VCC" description="" comment="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="PMIC_NPA_RESOURCE_UIM1"></Enum>
+            <Enum value="1" name="PMIC_NPA_RESOURCE_UIM2"></Enum>
+        </Member>
+        <Member name="UIM[0].UIM_RESET_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[0].UIM_RESET_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[0].UIM_RESET_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[0].UIM_RESET_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[0].UIM_DATA_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[0].UIM_DATA_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[0].UIM_DATA_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[0].UIM_DATA_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[0].UIM_CLOCK_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[0].UIM_CLOCK_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[0].UIM_CLOCK_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[0].UIM_CLOCK_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[0].UIM_CARD_DETECT_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[0].UIM_CARD_DETECT_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[0].UIM_CARD_DETECT_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[0].UIM_CARD_DETECT_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[1].DISABLE_UIM" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="UIM[1].ENABLE_UIM_HOTSWAP" description="" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="UIM[1].UIM_HOTSWAP_POLARITY" description="" comment="" sizeOf="1" type="uint8">1
+            <Enum value="0" name="ACTIVE_LOW"></Enum>
+            <Enum value="1" name="ACTIVE_HIGH"></Enum>
+        </Member>
+        <Member name="UIM[1].UIM_CONTROLLER_IRQ_NUM" description="" comment="" sizeOf="1" type="uint16">466</Member>
+        <Member name="UIM[1].UIM_UART" description="" comment="" sizeOf="1" type="uint8">1
+            <Enum value="0" name="BADGER_MSS_UIM0_UART_DM"></Enum>
+            <Enum value="1" name="BADGER_MSS_UIM1_UART_DM"></Enum>
+            <Enum value="4" name="UIM_SPCOMM_INTERFACE"></Enum>
+        </Member>
+        <Member name="UIM[1].UIM_UART_IRQ_NUM" description="" comment="" sizeOf="1" type="uint16">470</Member>
+        <Member name="UIM[1].UIM_VCC" description="" comment="" sizeOf="1" type="uint8">1
+            <Enum value="0" name="PMIC_NPA_RESOURCE_UIM1"></Enum>
+            <Enum value="1" name="PMIC_NPA_RESOURCE_UIM2"></Enum>
+        </Member>
+        <Member name="UIM[1].UIM_RESET_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[1].UIM_RESET_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[1].UIM_RESET_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[1].UIM_RESET_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[1].UIM_DATA_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[1].UIM_DATA_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[1].UIM_DATA_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[1].UIM_DATA_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[1].UIM_CLOCK_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[1].UIM_CLOCK_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[1].UIM_CLOCK_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[1].UIM_CLOCK_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[1].UIM_CARD_DETECT_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[1].UIM_CARD_DETECT_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[1].UIM_CARD_DETECT_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[1].UIM_CARD_DETECT_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">3
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[2].DISABLE_UIM" description="" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="UIM[2].ENABLE_UIM_HOTSWAP" description="" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="UIM[2].UIM_HOTSWAP_POLARITY" description="" comment="" sizeOf="1" type="uint8">1
+            <Enum value="0" name="ACTIVE_LOW"></Enum>
+            <Enum value="1" name="ACTIVE_HIGH"></Enum>
+        </Member>
+        <Member name="UIM[2].UIM_CONTROLLER_IRQ_NUM" description="" comment="" sizeOf="1" type="uint16">307</Member>
+        <Member name="UIM[2].UIM_UART" description="" comment="" sizeOf="1" type="uint8">3
+            <Enum value="0" name="BADGER_MSS_UIM0_UART_DM"></Enum>
+            <Enum value="1" name="BADGER_MSS_UIM1_UART_DM"></Enum>
+            <Enum value="4" name="UIM_SPCOMM_INTERFACE"></Enum>
+        </Member>
+        <Member name="UIM[2].UIM_UART_IRQ_NUM" description="" comment="" sizeOf="1" type="uint16">311</Member>
+        <Member name="UIM[2].UIM_VCC" description="" comment="" sizeOf="1" type="uint8">3
+            <Enum value="0" name="PMIC_NPA_RESOURCE_UIM1"></Enum>
+            <Enum value="1" name="PMIC_NPA_RESOURCE_UIM2"></Enum>
+        </Member>
+        <Member name="UIM[2].UIM_RESET_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[2].UIM_RESET_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[2].UIM_RESET_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[2].UIM_RESET_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[2].UIM_DATA_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[2].UIM_DATA_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[2].UIM_DATA_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[2].UIM_DATA_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[2].UIM_CLOCK_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[2].UIM_CLOCK_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[2].UIM_CLOCK_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[2].UIM_CLOCK_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[2].UIM_CARD_DETECT_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[2].UIM_CARD_DETECT_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[2].UIM_CARD_DETECT_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[2].UIM_CARD_DETECT_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">3
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[3].DISABLE_UIM" description="" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="UIM[3].ENABLE_UIM_HOTSWAP" description="" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="UIM[3].UIM_HOTSWAP_POLARITY" description="" comment="" sizeOf="1" type="uint8">1
+            <Enum value="0" name="ACTIVE_LOW"></Enum>
+            <Enum value="1" name="ACTIVE_HIGH"></Enum>
+        </Member>
+        <Member name="UIM[3].UIM_CONTROLLER_IRQ_NUM" description="" comment="" sizeOf="1" type="uint16">308</Member>
+        <Member name="UIM[3].UIM_UART" description="" comment="" sizeOf="1" type="uint8">3
+            <Enum value="0" name="BADGER_MSS_UIM0_UART_DM"></Enum>
+            <Enum value="1" name="BADGER_MSS_UIM1_UART_DM"></Enum>
+            <Enum value="4" name="UIM_SPCOMM_INTERFACE"></Enum>
+        </Member>
+        <Member name="UIM[3].UIM_UART_IRQ_NUM" description="" comment="" sizeOf="1" type="uint16">312</Member>
+        <Member name="UIM[3].UIM_VCC" description="" comment="" sizeOf="1" type="uint8">3
+            <Enum value="0" name="PMIC_NPA_RESOURCE_UIM1"></Enum>
+            <Enum value="1" name="PMIC_NPA_RESOURCE_UIM2"></Enum>
+        </Member>
+        <Member name="UIM[3].UIM_RESET_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[3].UIM_RESET_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[3].UIM_RESET_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[3].UIM_RESET_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[3].UIM_DATA_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[3].UIM_DATA_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[3].UIM_DATA_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[3].UIM_DATA_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[3].UIM_CLOCK_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[3].UIM_CLOCK_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[3].UIM_CLOCK_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[3].UIM_CLOCK_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UIM[3].UIM_CARD_DETECT_GPIO_NUM" description="" comment="" sizeOf="1" type="uint16">65535</Member>
+        <Member name="UIM[3].UIM_CARD_DETECT_GPIO_FUNC_SELECTION" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="UIM[3].UIM_CARD_DETECT_GPIO_DRV_STRENGTH" comment="" description="" sizeOf="1" type="uint8">0
+            <Enum value="0" name="2MA"></Enum>
+            <Enum value="1" name="4MA"></Enum>
+            <Enum value="2" name="6MA"></Enum>
+            <Enum value="3" name="8MA"></Enum>
+            <Enum value="4" name="10MA"></Enum>
+            <Enum value="5" name="12MA"></Enum>
+            <Enum value="6" name="14MA"></Enum>
+            <Enum value="7" name="16MA"></Enum>
+        </Member>
+        <Member name="UIM[3].UIM_CARD_DETECT_PULL_SETTING" comment="" description="" sizeOf="1" type="uint8">3
+            <Enum value="0" name="NO_PULL"></Enum>
+            <Enum value="1" name="PULL_DOWN"></Enum>
+            <Enum value="2" name="KEEPER"></Enum>
+            <Enum value="3" name="PULL_UP"></Enum>
+        </Member>
+        <Member name="UICC_SHUTDOWN_BATT_REMOVAL" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="UICC_SHUTDOWN_CARD_REMOVAL[0]" description="" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="UICC_SHUTDOWN_CARD_REMOVAL[1]" description="" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="UICC_SHUTDOWN_CARD_REMOVAL[2]" description="" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="UICC_SHUTDOWN_CARD_REMOVAL[3]" description="" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="USB_UICC_SUPPORTED[0]" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="USB_UICC_SUPPORTED[1]" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="USB_UICC_SUPPORTED[2]" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="USB_UICC_SUPPORTED[3]" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="uimSwpCapabilitySupported[0]" description="" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="uimSwpCapabilitySupported[1]" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="uimSwpCapabilitySupported[2]" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="uimSwpCapabilitySupported[3]" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="uim_hotswap_flaky_switch[0]" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="uim_hotswap_flaky_switch[1]" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="uim_hotswap_flaky_switch[2]" description="" comment="" sizeOf="1" type="bool">0</Member>
+        <Member name="uim_hotswap_flaky_switch[3]" description="" comment="" sizeOf="1" type="bool">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="70219" name="ant_div_switch_init" category="MCS" comment="" description="Ant Div Switch Initial Setttings" fullpathname="/nv/item_files/mcs/trm/ant_div_switch_init" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="DPDT_Switch" sizeOf="1" type="uint8">
+            <Enum value="0" name="TRM_TX_DIV_SWITCH_CONFIG_0"></Enum>
+            <Enum value="1" name="TRM_TX_DIV_SWITCH_CONFIG_1"></Enum>
+        </Member>
+        <Member comment="" description="" name="AntSwitchTestModeControl" sizeOf="1" type="uint8">
+            <Enum value="0" name="Typical"></Enum>
+            <Enum value="1" name="AlternatingOnOff"></Enum>
+            <Enum value="2" name="AlternatingOffForcedSwitch"></Enum>
+            <Enum value="3" name="AlternatingOnOffForcedSwitch"></Enum>
+        </Member>
+        <Member comment="" description="" name="AntSwitchDiv_DwellingTime" sizeOf="1" type="uint64">2</Member>
+        <Member comment="" description="" name="DPDT_switch_SV_default" sizeOf="1" type="uint8">
+            <Enum value="0" name="TRM_ANT_SWITCH_DIV_CONFIG_0"></Enum>
+            <Enum value="1" name="TRM_ANT_SWITCH_DIV_CONFIG_1"></Enum>
+        </Member>
+        <Member comment="" description="" name="Default_Keep_Behavior" sizeOf="1" type="uint8">
+            <Enum value="0" name="SV_Traffic_Keep_Idle_Idle_Default"></Enum>
+            <Enum value="1" name="SV_Traffic_Default_Idle_Idle_Default"></Enum>
+            <Enum value="2" name="SV_Traffic_Keep_Idle_Idle_Keep"></Enum>
+            <Enum value="3" name="SV_Traffic_Default_Idle_Idle_Keep"></Enum>
+        </Member>
+        <Member comment="" description="" name="IdleIdleCollisionLimit" sizeOf="1" type="uint8">2</Member>
+        <Member comment="" description="" name="reserved" sizeOf="1" type="uint16">2</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="70239" name="supplement_service_domain_pref" category="MMode" comment="" description="PS supplementary service domain preference" fullpathname="/nv/item_files/modem/mmode/supplement_service_domain_pref" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="sys_supp_srv_domain_pref_e_type" sizeOf="1" type="uint8">
+            <Enum value="0" name="SYS_PS_SUPP_DOMAIN_PREF_AUTO"></Enum>
+            <Enum value="1" name="SYS_PS_SUPP_DOMAIN_PREF_CS_ONLY"></Enum>
+            <Enum value="2" name="SYS_PS_SUPP_DOMAIN_PREF_PS_ONLY"></Enum>
+            <Enum value="3" name="SYS_PS_SUPP_DOMAIN_PREF_PS_PREF"></Enum>
+        </Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="70276" name="wl1_ant_switch_band_nv" description="Band specific inputs for type1/type2 algorithm" comment="" category="WCDMA" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/wcdma/l1/wl1_ant_switch_band_nv">
+        <Member name="type_1_bands_mask" description="" comment="" sizeOf="1" type="uint64"></Member>
+        <Member name="type_2_bands_mask" description="" comment="" sizeOf="1" type="uint64"></Member>
+        <Member name="type2_post_switchBack_suspension_time" description="" comment="" sizeOf="1" type="int16"></Member>
+        <Member name="type2_post_switch_eval_base_thre" description="" comment="" sizeOf="1" type="int16"></Member>
+        <Member name="type2_RSCP_drop_thre" description="" comment="" sizeOf="1" type="uint8"></Member>
+        <Member name="mtpl_algorithm_disable" description="" comment="" sizeOf="1" type="uint8"></Member>
+        <Member name="type1_post_switchBack_suspension_time" description="" comment="" sizeOf="1" type="uint8"></Member>
+        <Member name="wcdma_traffic_crisis_mode_thr" description="" comment="" sizeOf="1" type="uint8"></Member>
+        <Member name="wcdma_idle_pingpong_mitigation_thr" description="" comment="" sizeOf="1" type="uint8"></Member>
+        <Member name="wcdma_idle_suspension_duration" description="" comment="" sizeOf="1" type="uint8"></Member>
+        <Member name="db_dc_asdiv_disable" description="" comment="" sizeOf="1" type="uint8"></Member>
+        <Member name="db_dc_ant_switch_pos" description="" comment="" sizeOf="1" type="uint8"></Member>
+        <Member name="is_2way_asdiv" description="" comment="" sizeOf="1" type="uint8"></Member>
+        <Member name="type1_RSCP_thre_loopback_trigger" description="" comment="" sizeOf="1" type="uint8"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="70277" name="ant_switch_band_info" description="Antenna switch feature: Band specific inputs for type1/type2 algorithm" comment="" category="LTE" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/lte/ML1/ant_switch_band_info">
+        <Member name="type_1_bands_mask" description="" comment="" sizeOf="1" type="uint64"></Member>
+        <Member name="type_2_bands_mask" description="" comment="" sizeOf="1" type="uint64"></Member>
+        <Member name="per_band_default_cfg" description="" comment="" sizeOf="1" type="uint64"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="70302" name="operator_name" description="Operator Name for enabling QRD features" comment="" category="MMode" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/mmode/operator_name">
+        <Member name="operator_name" description="" comment="" sizeOf="1" type="uint8">
+            <Enum value="0" name="OPERATOR_NULL"></Enum>
+            <Enum value="1" name="OPERATOR_CT"></Enum>
+            <Enum value="2" name="OPERATOR_CU"></Enum>
+            <Enum value="3" name="OPERATOR_CMCC"></Enum>
+        </Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="70315" name="wlan_offload_config" category="Data" comment="" description="Determines the WLAN offload type" fullpathname="/nv/item_files/data/wlan_config/wlan_offload_config" mcfgAttributes="0x50" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="wlan_offload_config" sizeOf="1" type="uint8">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="70323" name="nas_l2g_srvcc_support" description="To enable/disable capability indication for SRVCC from EUTRAN to GERAN" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/nas/nas_l2g_srvcc_support">
+        <Member name="l2g_srvcc_support" description="To enable/disable capability indication for SRVCC from EUTRAN to GERAN" comment="" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="70330" name="t3245_timer" description="Default value of T3245" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/nas/t3245_timer">
+        <Member name="nas_t3245_timer" description="" comment="" sizeOf="1" type="uint32">5</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="71522" name="custom_emerg_info" category="MMode" comment="" description="customized emergency call behavior" fullpathname="/nv/item_files/modem/mmode/custom_emerg_info" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="customized emergency call behavior" name="version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="is_ecbm_required" sizeOf="1" type="bool">0</Member>
+        <Member comment="" description="" name="hold_concurrent_voicecall_during_emergency" sizeOf="1" type="bool">1</Member>
+        <Member comment="" description="" name="is_alternate_redial_algorithm" sizeOf="1" type="bool">0</Member>
+        <Member comment="" description="" name="is_store_ral_in_efs" sizeOf="1" type="bool">0</Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint56">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="71524" name="get_net_auto_mode" description="Manual PLMN Search/Selection In Auto Mode" comment="" category="MMode" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/mmode/get_net_auto_mode">
+        <Member name="version" description="" comment="" sizeOf="1" type="uint8">5</Member>
+        <Member name="get_net_auto_mode" description="" comment="" sizeOf="1" type="uint16">5</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="71527" name="qp_ims_reg_config_db" fixed_size="1024" category="IMS" comment="" description="configuration related to registration parameters" fullpathname="/nv/item_files/ims/qp_ims_reg_config_db" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version" name="Version" sizeOf="1" type="uint8">4</Member>
+        <Member comment="" description="" name="iRAT[0]" sizeOf="1" type="uint16">272</Member>
+        <Member comment="" description="" name="iAPNType_APNindex[0]" sizeOf="1" type="uint8">17</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info" name="iIMSServiceInfo[0]" sizeOf="1" type="uint32">7</Member>
+        <Member comment="" description="IMS auth type and security type to use" name="iAuth_SecType[0]" sizeOf="1" type="uint8">136</Member>
+        <Member comment="" description="" name="iIPTypeInfo[0]" sizeOf="1" type="uint8">48</Member>
+        <Member comment="" description="" name="iRATRegActionMask[0]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info in roaming" name="iIMSRoamServiceInfo[0]" sizeOf="1" type="uint32">7</Member>
+        <Member comment="" description="" name="iRAT[1]" sizeOf="1" type="uint16">512</Member>
+        <Member comment="" description="" name="iAPNType_APNindex[1]" sizeOf="1" type="uint8">17</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info" name="iIMSServiceInfo[1]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="IMS auth type and security type to use" name="iAuth_SecType[1]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iIPTypeInfo[1]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iRATRegActionMask[1]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info in roaming" name="iIMSRoamServiceInfo[1]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="iRAT[2]" sizeOf="1" type="uint16">16</Member>
+        <Member comment="" description="" name="iAPNType_APNindex[2]" sizeOf="1" type="uint8">17</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info" name="iIMSServiceInfo[2]" sizeOf="1" type="uint32">7</Member>
+        <Member comment="" description="IMS auth type and security type to use" name="iAuth_SecType[2]" sizeOf="1" type="uint8">136</Member>
+        <Member comment="" description="" name="iIPTypeInfo[2]" sizeOf="1" type="uint8">80</Member>
+        <Member comment="" description="" name="iRATRegActionMask[2]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info in roaming" name="iIMSRoamServiceInfo[2]" sizeOf="1" type="uint32">5</Member>
+        <Member comment="" description="" name="iRAT[3]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="" name="iAPNType_APNindex[3]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info" name="iIMSServiceInfo[3]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="IMS auth type and security type to use" name="iAuth_SecType[3]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iIPTypeInfo[3]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iRATRegActionMask[3]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info in roaming" name="iIMSRoamServiceInfo[3]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="iRAT[4]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="" name="iAPNType_APNindex[4]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info" name="iIMSServiceInfo[4]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="IMS auth type and security type to use" name="iAuth_SecType[4]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iIPTypeInfo[4]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iRATRegActionMask[4]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info in roaming" name="iIMSRoamServiceInfo[4]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="iRAT[5]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="" name="iAPNType_APNindex[5]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info" name="iIMSServiceInfo[5]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="IMS auth type and security type to use" name="iAuth_SecType[5]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iIPTypeInfo[5]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iRATRegActionMask[5]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info in roaming" name="iIMSRoamServiceInfo[5]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="iRAT[6]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="" name="iAPNType_APNindex[6]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info" name="iIMSServiceInfo[6]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="IMS auth type and security type to use" name="iAuth_SecType[6]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iIPTypeInfo[6]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iRATRegActionMask[6]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info in roaming" name="iIMSRoamServiceInfo[6]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="iRAT[7]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="" name="iAPNType_APNindex[7]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info" name="iIMSServiceInfo[7]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="IMS auth type and security type to use" name="iAuth_SecType[7]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iIPTypeInfo[7]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iRATRegActionMask[7]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info in roaming" name="iIMSRoamServiceInfo[7]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="iRAT[8]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="" name="iAPNType_APNindex[8]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info" name="iIMSServiceInfo[8]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="IMS auth type and security type to use" name="iAuth_SecType[8]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iIPTypeInfo[8]" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iRATRegActionMask[8]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info in roaming" name="iIMSRoamServiceInfo[8]" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="iRAT[9]" sizeOf="1" type="uint16">784</Member>
+        <Member comment="" description="" name="iAPNType_APNindex[9]" sizeOf="1" type="uint8">49</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info" name="iIMSServiceInfo[9]" sizeOf="1" type="uint32">5</Member>
+        <Member comment="" description="IMS auth type and security type to use" name="iAuth_SecType[9]" sizeOf="1" type="uint8">200</Member>
+        <Member comment="" description="" name="iIPTypeInfo[9]" sizeOf="1" type="uint8">80</Member>
+        <Member comment="" description="" name="iRATRegActionMask[9]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Variable to store the different 16 IMS srv info in roaming" name="iIMSRoamServiceInfo[9]" sizeOf="1" type="uint32">7</Member>
+        <Member comment="" description="First 4 bit RAT and rest 12 bit 4 APN FB" name="iRATAPNFallback[0]" sizeOf="1" type="uint16">37376</Member>
+        <Member comment="" description="On given rat apn all the allowed IMS srv" name="iServicePriorityWWAN[0]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="First 4 bit RAT and rest 12 bit 4 APN FB" name="iRATAPNFallback[1]" sizeOf="1" type="uint16">20992</Member>
+        <Member comment="" description="On given rat apn all the allowed IMS srv" name="iServicePriorityWWAN[1]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="First 4 bit RAT and rest 12 bit 4 APN FB" name="iRATAPNFallback[2]" sizeOf="1" type="uint16">41472</Member>
+        <Member comment="" description="On given rat apn all the allowed IMS srv" name="iServicePriorityWWAN[2]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="First 4 bit RAT and rest 12 bit 4 APN FB" name="iRATAPNFallback[3]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="On given rat apn all the allowed IMS srv" name="iServicePriorityWWAN[3]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="First 4 bit RAT and rest 12 bit 4 APN FB" name="iRATAPNFallback[4]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="On given rat apn all the allowed IMS srv" name="iServicePriorityWWAN[4]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="First 4 bit RAT and rest 12 bit 4 APN FB" name="iRATAPNFallback[5]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="On given rat apn all the allowed IMS srv" name="iServicePriorityWWAN[5]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="First 4 bit RAT and rest 12 bit 4 APN FB" name="iRATAPNFallback[6]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="On given rat apn all the allowed IMS srv" name="iServicePriorityWWAN[6]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="First 4 bit RAT and rest 12 bit 4 APN FB" name="iRATAPNFallback[7]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="On given rat apn all the allowed IMS srv" name="iServicePriorityWWAN[7]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="First 4 bit RAT and rest 12 bit 4 APN FB" name="iRATAPNFallback[8]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="On given rat apn all the allowed IMS srv" name="iServicePriorityWWAN[8]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="First 4 bit RAT and rest 12 bit 4 APN FB" name="iRATAPNFallback[9]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="On given rat apn all the allowed IMS srv" name="iServicePriorityWWAN[9]" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="configuration related to registration parameters" name="iAllowedIMSSrvOnWLAN" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Whether all FTs needs to be added or not" name="bAddAllFTs" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Store ACS priority" name="iACSPriority" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Store ISIM Priority" name="iISIMPriority" sizeOf="1" type="uint8">2</Member>
+        <Member comment="" description="NV Priority" name="iNVPriority" sizeOf="1" type="uint8">3</Member>
+        <Member comment="" description="Store PCO Priority" name="iPCOPriority" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Store the info about the each IMS service status" name="iIMSServiceStatus" sizeOf="1" type="uint32">132120583</Member>
+        <Member comment="" description="APN Name" name="cAPNName[0]" sizeOf="50" type="string">ims</Member>
+        <Member comment="" description="APN Name" name="cAPNName[1]" sizeOf="50" type="string">sos</Member>
+        <Member comment="" description="APN Name" name="cAPNName[2]" sizeOf="50" type="string" />
+        <Member comment="" description="NV item to controls reregistration should be allowed on 2G/3G or not." name="eEnableReregOn2G3G" sizeOf="1" type="uint8">
+            <Enum value="0" name="QPE_ENABLE_REREG_ON2G3G_INVALID"></Enum>
+            <Enum value="1" name="QPE_ENABLE_REREG_ON2G3G_ON"></Enum>
+            <Enum value="2" name="QPE_ENABLE_REREG_ON2G3G_OFF"></Enum>
+        </Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint671" />
+    </NvEfsItemData>
+    <NvEfsItemData id="71546" name="mcfg_autoselect_by_uim" category="mcfg" comment="" description="To enable or disable modem config auto selection by UIM" fullpathname="/nv/item_files/mcfg/mcfg_autoselect_by_uim" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="autoselect_by_uim" sizeOf="1" type="uint8">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="71554" name="mid_call_srvcc_info" category="MMode" comment="" description="mid call srvcc setting info for 3rd party/QC IMS" fullpathname="/nv/item_files/modem/mmode/mid_call_srvcc_info" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="version" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="" name="ims_cache_expiry_duration" sizeOf="1" type="uint32">5000</Member>
+        <Member comment="" description="" name="mid_call_support" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="" name="srvcc_sync_support" sizeOf="1" type="bool">1</Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint8"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="72509" name="reg_nv_items" description="This NV item will be used by REG to take care of all future NV items." comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/nas/reg_nv_items">
+        <Member name="version" description="This NV item will be used by REG to take care of all future NV items." comment="" sizeOf="1" type="uint8">4</Member>
+        <Member name="is_hplmn_has_to_be_selected" description="Thsi field will tell, if HPLMN is to be selected or not" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="is_roaming_on_in_eplmn" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="is_sim_invalid_recovery_enabled" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="is_camp_on_2g_if_reg_failure" description="This field is to tell if UE should camp only on TIM2G and not redirect to 3G/4G of TIM." comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="is_pseudo_reselection_allowed" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="is_w_bplmn_pseudo_enabled" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="use_rplmnact_mode_change" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="is_home_plmn_to_be_selcted_in_home_country" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="is_opt_mplmn_scan_enabled" description="" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="ReservedBytes" description="Bytes reserved for future versions" comment="" sizeOf="1" type="uint168"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="72510" name="max_validate_sim_counter" description="Indicates max recovery attempts for SIM invalidation" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/nas/max_validate_sim_counter">
+        <Member name="max_validate_sim_counter" description="" comment="" sizeOf="1" type="uint8">10</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="72528" name="conn_mode_manual_search" description="Connected Mode Manual Search" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/nas/conn_mode_manual_search">
+        <Member name="conn_mode_manual_search" description="" comment="" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="72533" name="gnss_nv_efs_sm_e911_config" description="" comment="" category="GPS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/gps/cgps/sm/gnss_nv_efs_sm_e911_config">
+        <Member name="gnss_nv_efs_sm_e911_config" description="" comment="" sizeOf="1" type="uint32">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="72582" name="rrc_dsda_concurrency_extended" description="DSDA concurrency NV" comment="" category="WCDMA" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/wcdma/rrc/rrc_dsda_concurrency_extended">
+        <Member name="rrc_dsda_concurrency" description="DSDA concurrency NV" comment="" sizeOf="1" type="uint16">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="72604" name="dual_ip_fallback" description="Stores fallback IP type and Feature enable/disable information" comment="" category="Data" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/data/3gpp/ps/dual_ip_fallback">
+        <Member name="fallback_enabled" description="Stores fallback IP type and Feature enable/disable information" comment="" sizeOf="1" type="bool">1</Member>
+        <Member name="fallback_ip_type" description="Enum storing fallback IP type" comment="" sizeOf="1" type="uint8">
+            <Enum value="0" name="IPV4_ONLY"></Enum>
+            <Enum value="1" name="IPV6_ONLY"></Enum>
+        </Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73509" name="mmgsdi_refresh_vote_ok" category="SMS" comment="" description="Vote TRUE for refresh if NV is set, Default value = FALSE" fullpathname="/nv/item_files/modem/sms/mmgsdi_refresh_vote_ok" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Vote TRUE for refresh if NV is set, Default value = FALSE" name="mmgsdi_refresh_vote_ok" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73527" name="qp_ims_plani_config" fixed_size="128" category="" comment="" description="PLANI related Config items" fullpathname="/nv/item_files/ims/qp_ims_plani_config" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version control for PLANI Items" name="Version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="AccessType value" name="AccessType" sizeOf="1" type="uint32" />
+        <Member comment="" description="LAC Value" name="LAC" sizeOf="1" type="uint16" />
+        <Member comment="" description="TAC Value" name="TAC" sizeOf="1" type="uint16" />
+        <Member comment="" description="CellIdentity Value" name="CellIdentity" sizeOf="1" type="uint32" />
+        <Member comment="" description="CellIdentity Value" name="SID" sizeOf="1" type="uint16" />
+        <Member comment="" description="NID Value" name="NID" sizeOf="1" type="uint16" />
+        <Member comment="" description="PZID Value" name="PZID" sizeOf="1" type="uint16" />
+        <Member comment="" description="BASEID Value" name="BASEID" sizeOf="1" type="uint16" />
+        <Member comment="" description="SectorID value" name="SectorID" sizeOf="16" type="uint8" />
+        <Member comment="" description="SubnetLength value" name="SubnetLength" sizeOf="1" type="uint8" />
+        <Member comment="" description="tm_sec Value" name="tm_sec" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="tm_min Value" name="tm_min" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="tm_hour Value" name="tm_hour" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="tm_mday Value" name="tm_mday" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="tm_mon Value" name="tm_mon" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="tm_year Value" name="tm_year" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="tm_wday Value" name="tm_wday" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="MCC value" name="MCC" sizeOf="6" type="string" />
+        <Member comment="" description="MNC value" name="MNC" sizeOf="6" type="string" />
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint512">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73529" name="disable_apn_matching" description="Disable APN name matching" comment="" category="Data" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/data/3gpp/lteps/disable_apn_matching">
+        <Member name="disable_apn_matching" description="" comment="" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73538" name="ue_based_cw" category="MMode" comment="" description="UE based call wating" fullpathname="/nv/item_files/modem/mmode/ue_based_cw" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="use_ue_based_cw" sizeOf="1" type="bool">0</Member>
+        <Member comment="" description="" name="is_enabled" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73544" name="lte_nas_ignore_mt_csfb_during_volte_call" category="Unknown" comment="" description="" fullpathname="/nv/item_files/modem/nas/lte_nas_ignore_mt_csfb_during_volte_call" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="lte_nas_ignore_mt_csfb_during_volte_call" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73545" name="wifi_config" category="MMode" comment="" description="This holds information regarding custom wifi configuarations" fullpathname="/nv/item_files/modem/mmode/wifi_config" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="This holds information regarding custom wifi configuarations" name="version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="This field set to TRUE indicates support of voice calls in wifi only mode. Default value is FALSE." name="is_wifi_only_mode_for_voice" sizeOf="1" type="bool">1</Member>
+        <Member comment="" description="If set to TRUE indicates support of emergency call and corresponding silent redial requirements over wifi. Default value is FALSE." name="is_e911_over_wifi" sizeOf="1" type="bool">1</Member>
+        <Member comment="" description="This field indicates the time for which call would be attempted on CS domain. If the call does not get an ok_to_orig in the above mentioned time, call would be re-attempted on wifi. Default value for this timer is 5sec." name="wifi_cs_scan_timer" sizeOf="1" type="uint8">5</Member>
+        <Member comment="" description="" name="wifi_e911_wwan_full_srv" sizeOf="1" type="bool">0</Member>
+        <Member comment="" description="" name="volte_special_pref_setting" sizeOf="1" type="bool">0</Member>
+        <Member comment="" description="Reserved" name="reserved" sizeOf="1" type="uint56"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73556" name="preferred_plmn_list" description="The list of preferred PLMNs" comment="" category="NAS" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/nas/preferred_plmn_list">
+        <Member name="preferred_plmn_list" description="" comment="" sizeOf="251" type="uint8">59139</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73655" name="lte_emerg_redial" category="MMode" comment="" description="Enables CS to PS Silent Redial for emergency calls" fullpathname="/nv/item_files/modem/mmode/lte_emerg_redial" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="version" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="" name="redial_on_lte" sizeOf="1" type="bool">1</Member>
+        <Member comment="" description="" name="cs_favoured_retry_count" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Reserved" name="reserved" sizeOf="1" type="uint16">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73680" name="lte_bandpref_extn_65_256" description="" comment="" category="MMode" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/mmode/lte_bandpref_extn_65_256">
+        <Member name="lte_bandpref_extn_65_128" description="" comment="" sizeOf="1" type="uint64">
+            <Bitmask bit="1" name="LTE B66"></Bitmask>
+        </Member>
+        <Member comment="" description="" name="lte_bandpref_extn_129_192" sizeOf="1" type="uint64">0</Member>
+        <Member comment="" description="" name="lte_bandpref_extn_193_256" sizeOf="1" type="uint64">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73682" name="suppress_gsm_on_srvcc_csfb" description="Suppress notification of GSM once SRVCC or CSFB call ends" comment="" category="Data" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/data/dsmgr/suppress_gsm_on_srvcc_csfb">
+        <Member name="suppress_gsm_on_srvcc_csfb" description="Suppress notification of GSM once call ends until RAU/TAU" comment="" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73825" name="emergency_call_1x_scan_first" description="Used to control scan pattern when no subscription available" comment="" category="MMode" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/sd/emergency_call_1x_scan_first">
+        <Member name="emergency_call_1x_scan_first" description="" comment="" sizeOf="1" type="bool">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73831" name="qp_ims_cap_discovery_config" fixed_size="1024" category="IMS" comment="" description="IMS Presence related Config Parameters" fullpathname="/nv/item_files/ims/qp_ims_cap_discovery_config" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version number" name="version" sizeOf="1" type="uint8" />
+        <Member comment="" description="Expires header value for the PUBLISH request when the device is IMS registered on an LTE network (in seconds)." name="publishTimer" sizeOf="1" type="uint32" />
+        <Member comment="" description="Expires header value for the PUBLISH request when the device is on an eHRPD network(in seconds)." name="publishExtendedTimer" sizeOf="1" type="uint32" />
+        <Member comment="" description="Timer in seconds that determines the minimal interval between each PUBLISH request; the device must wait until this timer expires before it sends next PUBLISH request." name="publishSrcThrottleTimer" sizeOf="1" type="uint32" />
+        <Member comment="" description="Publish error recovery timer in seconds." name="publishErrRecoveryTimer" sizeOf="1" type="uint32" />
+        <Member comment="" description="Expires header value for the list SUBSCRIBE request when performing capability polling for more than one contact number (in seconds)." name="listSubscriptionExpiry" sizeOf="1" type="uint32" />
+        <Member comment="" description="How long (in seconds) cached capability information of a particular contact is still valid before it is updated by Capability Polling" name="capabilityCacheExpiry" sizeOf="1" type="uint32" />
+        <Member comment="" description="How long (in seconds) cached availability information of a particular contact is considered still valid before new Availability Fetch need to be sent." name="availabilityCacheExpiry" sizeOf="1" type="uint32" />
+        <Member comment="" description="Time interval in seconds between each Capability Polling." name="capabilityPollInterval" sizeOf="1" type="uint32" />
+        <Member comment="" description="Maximum number of contacts that can be included in a list subscribe request." name="maxEntriesInListSubscribe" sizeOf="1" type="uint32" />
+        <Member comment="" description="On and Off value that determines whether capability/availability discovery is enabled (0 – Off, 1 – On)." name="isCapDiscoveryEnabled" sizeOf="1" type="uint8" />
+        <Member comment="" description="Gzip enablerment: 0 - disabled, 1 - enabled." name="isGzipEnabled" sizeOf="1" type="uint8" />
+        <Member comment="" description="User Agent" name="userAgent" sizeOf="128" type="string" />
+        <Member comment="" description="Not used or set by OEM; used internally by the Presence Enabler for persistent storage of the last eTag string in the server's 200 OK response to the PUBLISH request." name="lastPublishETag" sizeOf="128" type="string" />
+        <Member comment="" description="Not used or set by OEM; used internally by the Presence Enabler for persistent storage of the last time 200OK response to PUBLISH request was received." name="lastPublishRespTime" sizeOf="1" type="uint32" />
+        <Member comment="" description="Not used or set by OEM; used internally by the Presence Enabler for persistent storage of the value of the Expires header in the 200 OK response to last PUBLISH request." name="lastPublishExpiry" sizeOf="1" type="uint32" />
+        <Member comment="" description="Bytes reserved for future versions" name="reserved" sizeOf="1" type="uint721" />
+    </NvEfsItemData>
+    <NvEfsItemData id="73832" name="qp_ims_rcs_client_config" fixed_size="1024" category="IMS" comment="" description="IMS RCS Client related Config Parameters" fullpathname="/nv/item_files/ims/qp_ims_rcs_client_config" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version number" name="version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="autoConfigUserAgent" sizeOf="128" type="string" />
+        <Member comment="" description="" name="xdmClientUserAgent" sizeOf="128" type="string" />
+        <Member comment="" description="Client vendor" name="clientVendor" sizeOf="16" type="string" />
+        <Member comment="" description="Client version" name="clientVersion" sizeOf="16" type="string" />
+        <Member comment="" description="Terminal vendor" name="terminalVendor" sizeOf="16" type="string" />
+        <Member comment="" description="Terminal model" name="terminalModel" sizeOf="16" type="string" />
+        <Member comment="" description="Terminal software version" name="terminalSwVersion" sizeOf="16" type="string" />
+        <Member comment="" description="Bytes reserved for future versions" name="reserved" sizeOf="1" type="uint687" />
+    </NvEfsItemData>
+    <NvEfsItemData id="73833" name="IMS_Service_Enablement" fixed_size="1024" category="IMS" comment="" description="Switches to enable/disable IMS services" fullpathname="/nv/item_files/ims/qp_ims_service_enablement_config" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Toggle Voice calling support on LTE" name="VoLTEEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Toggle Video Telephony support on the device" name="VideoTelephonyEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Toggle Mobile Data" name="MobileDataEnabled" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Mask of services enabled by network through OMA-DM" name="ServicesMaskEnabledbyNetwork" sizeOf="1" type="uint32" />
+        <Member comment="" description="Toggle support for calls on wifi" name="WifiCallingEnabled" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Incase when wifi is enabled, call mode preference can be selected for calls as cellular preffered or wifi preffered" name="CallModePref" sizeOf="1" type="uint32">1</Member>
+        <Member comment="" description="Toggle support for calls on wifi in roaming network" name="WifiCallingEnabledinRoaming" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Unique identifier required to enable wifi as per oprt reqs" name="WifiProvisioningID" sizeOf="20" type="string" />
+        <Member comment="" description="IMS Normal Registration Mode ENABLE/Disabled" name="ImsServiceEnabled" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Enable/Disable UT feature" name="UtEnabled" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="SMS Over IP Network indicatrion enable" name="SmsEnabled" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Enable/Disable DAN Feature" name="DanEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Enable/Disable USSD Feature" name="UssdEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Enable/Disable MWI Feature" name="MwiEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Presence service enabled(1)/disabled(0)" name="PresenceEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Auto-configuration service enabled (1)/disabled (0)" name="AutoConfigEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="XDM client enabled(1)/disabled(0)" name="XdmClientEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Rcs Messaging enabled(1)/disabled(0)" name="RcsMessagingEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="roaming preference" name="CallModePrefRoam" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="RTT enabled(1)/disabled(0)" name="RttEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="iCarrierConfigEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint7800"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73834" name="ims_sip_config" fixed_size="1024" category="IMS" comment="" description="IMS SIP Configuration Parameter" fullpathname="/nv/item_files/ims/ims_sip_config" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="SIP timer T1" name="Timer_T1" sizeOf="1" type="uint32">2000</Member>
+        <Member comment="" description="SIP timer T2" name="Timer_T2" sizeOf="1" type="uint32">16000</Member>
+        <Member comment="" description="SIP timer T4" name="Timer_T4" sizeOf="1" type="uint32">17000</Member>
+        <Member comment="" description="INVITE request retransmit interval, for UDP Only" name="Timer_TA" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="INVITE transaction timeout timer" name="Timer_TB" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="Proxy invite transaction timeout" name="Timer_TC" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="wait time for sip response retransmits" name="Timer_TD" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="Non-INVITE request retransmit interval, for UDP Only" name="Timer_TE" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="Non invite transaction timeout timer" name="Timer_TF" sizeOf="1" type="uint32">32000</Member>
+        <Member comment="" description="INVITE response retransmit interval" name="Timer_TG" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="Wait Time for ACK receipt" name="Timer_TH" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="Wait Time for ACK retransmits" name="Timer_TI" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="wait time for non-invite request retransmits" name="Timer_TJ" sizeOf="1" type="uint32">32000</Member>
+        <Member comment="" description="Wait time for response retransmits" name="Timer_TK" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="Timer_CallSetup" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="To determine if nat keepalive is enabled" name="IsKeepAliveEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Stored MCC country code" name="MCCCountryCode" sizeOf="10" type="string" />
+        <Member comment="" description="Wifi Registration Timestamp for PLANI" name="WifiRegTimestamp" sizeOf="50" type="string" />
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint902" />
+    </NvEfsItemData>
+    <NvEfsItemData id="73835" name="IMS_Common_Config" fixed_size="1024" category="IMS" comment="" description="IMS common group shared by multiple modules" fullpathname="/nv/item_files/ims/qp_ims_common_config" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Possible rats allowed at IMS level to proceed further" name="AllowedRATMask" sizeOf="1" type="uint32">1088</Member>
+        <Member comment="" description="Configure Domain name for Phone" name="PhoneContextUri" sizeOf="256" type="string" />
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint6104"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73837" name="RegistrationConfiguration" fixed_size="1024" category="IMS" comment="" description="IMS Registration Module Configuration Parameters" fullpathname="/nv/item_files/ims/RegistrationConfiguration" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version" name="Version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Target delay timer for IRAT" name="iRATHystersisTimer" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="Registration ReTry Base Time" name="retryBaseTime" sizeOf="1" type="uint16">30</Member>
+        <Member comment="" description="Registration ReTry Maximum Time" name="retryMaxTime" sizeOf="1" type="uint16">1800</Member>
+        <Member comment="" description="Registration Pre Configured Server Base Address" name="pcscfAddress" sizeOf="256" type="string" />
+        <Member comment="" description="Allows to configure the PSCSF Port" name="pcscfPort" sizeOf="1" type="uint16">5060</Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint6072"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73838" name="DANPrivateSettings" fixed_size="1024" scategory="VOIP" comment="" description="DAN needed" fullpathname="/nv/item_files/ims/DANPrivateSettings" mcfgAttributes="0x19" mcfgVariant="2" ubscription_mask="0x07">
+        <Member comment="" description="Version" name="version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="DAN needed in software for rembmembering to send DAN" name="danNeeded" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint8176"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73839" name="SMSConfiguration" fixed_size="1024" category="IMS" comment="" description="IMS SMS related Config Parameters" fullpathname="/nv/item_files/ims/SMSConfiguration" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version" name="version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="SMS Format Specification" name="smsFormat" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Configure SMS IMS PSI value" name="PSIValue" sizeOf="128" type="string" />
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint7152"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73840" name="DANConfiguration" fixed_size="1024" category="IMS" comment="" description="IMS DAN related Config Parameters" fullpathname="/nv/item_files/ims/DANConfiguration" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version" name="version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="IMS SMS VDN Config value" name="smsVDNConfig" sizeOf="128" type="string">10138</Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint7160"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73841" name="trm_ant_port_override_mode" category="RF" comment="" description="ASDiv config override NV" fullpathname="/nv/item_files/mcs/trm/trm_ant_port_override_mode" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="trm_ant_port_override_mode" sizeOf="1" type="uint8">255
+            <Enum value="255" name="Dynamic switching allowed"></Enum>
+            <Enum value="0" name="Config 0"></Enum>
+            <Enum value="17" name="Config 1"></Enum>
+            <Enum value="34" name="Config 2"></Enum>
+            <Enum value="51" name="Config 3"></Enum>
+        </Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73842" name="ImsVoiceDynamicConfig" fixed_size="1024" description="Items to configure IMS VOICE parameters" comment="" category="" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/ims/IMSVoiceDynamicConfig">
+        <Member name="Version" description="Version control for IMS VOICE parameters" comment="" sizeOf="1" type="uint8">4</Member>
+        <Member name="audioFeatureTag" description="Value of the audio feature tag sent in IMS registration" comment="" sizeOf="128" type="string">audio</Member>
+        <Member name="sessionExpires" description="Min SE value for session timer hdr" comment="" sizeOf="1" type="uint16">0</Member>
+        <Member name="minSessionExpires" description="Min SE value for session timer hdr" comment="" sizeOf="1" type="uint16"></Member>
+        <Member name="conferenceUri" description="Conference Server URI" comment="" sizeOf="128" type="string"></Member>
+        <Member name="silentRedialEnabled" description="Silent redial enabled for IMS calls" comment="" sizeOf="1" type="uint8">1</Member>
+        <Member name="callerIdMode" description="Caller id mode to allow presentation/restriction" comment="" sizeOf="1" type="uint16">16</Member>
+        <Member name="ringingTimer" description="Device ringing timer in msecs for MT calls" comment="" sizeOf="1" type="uint32">90000</Member>
+        <Member name="ringBackTimer" description="Device ringback timer in msecs for MO calls" comment="" sizeOf="1" type="uint32">35000</Member>
+        <Member name="rtpLinkAlivenessTimer" description="RTP monitoring timer in secs" comment="" sizeOf="1" type="uint32">20</Member>
+        <Member name="viceEnabled" description="Enable subscription to dialog event package" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="errorCodeList" description="configure error code which need to silent redial for normal call" comment="" sizeOf="128" type="string"></Member>
+        <Member name="threePartyConfFactoryUri" description="3rd Party Conference Factory URI" comment="" sizeOf="128" type="string"></Member>
+        <Member name="fromPreferred" description="originating party identity determination from PAI or from header" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="dlDTMFctrl" description="DL DTMF CTRL" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="ReservedBytes" description="Bytes reserved for future versions" comment="" sizeOf="1" type="uint3912"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73843" name="ImsVideoDynamicConfig" fixed_size="1024" category="" comment="" description="Items to configure IMS Video parameters" fullpathname="/nv/item_files/ims/IMSVideoDynamicConfig" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version control for IMS Video parameters" name="Version" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Value of the video feature tag sent in IMS registration" name="videoFeatureTag" sizeOf="128" type="string">video</Member>
+        <Member comment="" description="Value of the VT quality selector at boot up" name="vt_quality_selector" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint7152" />
+    </NvEfsItemData>
+    <NvEfsItemData id="73844" name="ImsEmerDynamicConfig" fixed_size="1024" category="" comment="" description="Items to configure IMS Emergency parameters" fullpathname="/nv/item_files/ims/IMSEmerDynamicConfig" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version control for IMS Emergency parameters" name="Version" sizeOf="1" type="uint8">2</Member>
+        <Member comment="" description="Value of the Emergency call setup timer on LTE" name="e911CallSetupTimer" sizeOf="1" type="uint32">20000</Member>
+        <Member comment="" description="Value of the Emergency call setup timer on WLAN" name="e911WlanCallSetupTimer" sizeOf="1" type="uint32">20000</Member>
+        <Member comment="" description="Silent redial enabled for E911 calls" name="e911SilentRedialEnabled" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Value of the Emergency call connect timer after 18x on LTE" name="e911CallConnectTimer" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="Value of the Emergency call connect timer after 18x on WLAN" name="e911WlanCallConnectTimer" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint8048" />
+    </NvEfsItemData>
+    <NvEfsItemData id="73845" name="ImsRtpDynamicConfig" fixed_size="1024" category="" comment="" description="Items to configure RTP parameters" fullpathname="/nv/item_files/ims/IMSRTPDynamicConfig" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version control for IMS RTP parameters" name="Version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Value of the RTP port number start range for audio" name="speechStartPort" sizeOf="1" type="uint16" />
+        <Member comment="" description="Value of the RTP port number stop range for audio" name="speechStopPort" sizeOf="1" type="uint16" />
+        <Member comment="" description="Value of the RTP port number start range for video" name="videoStartPort" sizeOf="1" type="uint16" />
+        <Member comment="" description="Value of the RTP port number stop range for video" name="videoStopPort" sizeOf="1" type="uint16" />
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint8120" />
+    </NvEfsItemData>
+    <NvEfsItemData id="73846" name="ImsCodecDynamicConfig" fixed_size="1024" category="" comment="" description="Items to configure IMS codec parameters" fullpathname="/nv/item_files/ims/IMSCodecDynamicConfig" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version control for IMS codec parameters" name="Version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Value of the Payload type number for AMR WB OA" name="amrWbOctetAlignedDynamicPt" sizeOf="1" type="uint16" />
+        <Member comment="" description="Value of the Payload type number for AMR WB BE" name="amrWbBandWidthEfficientDynamicPt" sizeOf="1" type="uint16" />
+        <Member comment="" description="Value of the Payload type number for AMR OA" name="amrOctetAlignedDynamicPt" sizeOf="1" type="uint16" />
+        <Member comment="" description="Value of the Payload type number for AMR BE" name="amrBandWidthEfficientDynamicPt" sizeOf="1" type="uint16" />
+        <Member comment="" description="Value of the Payload type number for DTMF WB" name="dtmfWbDynamicPt" sizeOf="1" type="uint16" />
+        <Member comment="" description="Value of the Payload type number for DTMF NB" name="dtmfNbDynamicPt" sizeOf="1" type="uint16" />
+        <Member comment="" description="Value of the AMR Modeset to be used in SDP offer when set" name="amrModeSet" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="Value of the AMR WB Modeset to be used in SDP offer when set" name="amrWbModeSet" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="Value of the default AMR WB mode to be used when no mode is negotiated" name="amrWbDefaultMode" sizeOf="1" type="uint16" />
+        <Member comment="" description="Enable HD Voice" name="amr_wb_enable" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Enable DTX for AMR NB" name="scr_amr_enable" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="Enable DTX for AMR WB" name="scr_amr_wb_enable" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="EVS primary payload type used" name="evs_prim_mode" sizeOf="1" type="int8">0</Member>
+        <Member comment="" description="default EVS bitrate" name="default_evs_bit_rate" sizeOf="1" type="int8">0</Member>
+        <Member comment="" description="default evs bw" name="default_evs_bw" sizeOf="1" type="int8">0</Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint7960" />
+    </NvEfsItemData>
+    <NvEfsItemData id="73847" name="ImsTestDynamicConfig" fixed_size="1024" category="" comment="" description="Items to configure IMS Test parameters" fullpathname="/nv/item_files/ims/IMSTestDynamicConfig" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version control for IMS Test parameters" name="Version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Enable e911 test mode" name="e911TestMode" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Enable conformance test mode" name="conformanceTestEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint8168" />
+    </NvEfsItemData>
+    <NvEfsItemData id="73848" name="ImsWifiDynamicConfig" fixed_size="1024" category="" comment="" description="Items to configure IMS Wifi parameters" fullpathname="/nv/item_files/ims/IMSWifiDynamicConfig" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version control for IMS Wifi parameters" name="Version" sizeOf="1" type="uint8">3</Member>
+        <Member comment="" description="" name="hoHystTimerEpdgLte" sizeOf="1" type="uint32">120</Member>
+        <Member comment="" description="" name="hoHystTimerEpdg1x" sizeOf="1" type="uint32" />
+        <Member comment="" description="" name="hoHystTimerEpdgWifi" sizeOf="1" type="uint32">120</Member>
+        <Member comment="" description="" name="hoEnabled" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="hoToLteQualTh1" sizeOf="1" type="int32" />
+        <Member comment="" description="" name="hoToLteQualTh2" sizeOf="1" type="int32" />
+        <Member comment="" description="" name="hoToLteQualTh3" sizeOf="1" type="int32" />
+        <Member comment="" description="" name="hoTo1xQualTh" sizeOf="1" type="int32" />
+        <Member comment="" description="" name="hoTo1xQualThA" sizeOf="1" type="int32" />
+        <Member comment="" description="" name="hoTo1xQualThB" sizeOf="1" type="int32" />
+        <Member comment="" description="" name="hoRATMask" sizeOf="1" type="uint32" />
+        <Member comment="" description="" name="hoHystTimerEpdg3gpp" sizeOf="1" type="uint32">120</Member>
+        <Member comment="" description="" name="hoHystTimerEpdg3gpp2" sizeOf="1" type="uint32">120</Member>
+        <Member comment="" description="" name="hoHystTimerEpdg1xRat" sizeOf="1" type="uint32">120</Member>
+        <Member comment="" description="" name="hoHystTimerEpdgLteVoipCallCellPref" sizeOf="1" type="uint32">60</Member>
+        <Member comment="" description="" name="hoHystTimerEpdgLteVoipCallWiFiPref" sizeOf="1" type="uint32">60</Member>
+        <Member comment="" description="" name="hoHystTimerEpdgLteVTCallCellPref" sizeOf="1" type="uint32">20</Member>
+        <Member comment="" description="" name="hoHystTimerEpdgLteVTCallWiFiPref" sizeOf="1" type="uint32">20</Member>
+        <Member comment="" description="" name="LTEDLRSRQSrcLow_IR92" sizeOf="1" type="int8">-80</Member>
+        <Member comment="" description="" name="LTEDLSNRSrcLow_IR92" sizeOf="1" type="int8">95</Member>
+        <Member comment="" description="" name="LTEDLRSRQTarget_IR92" sizeOf="1" type="int8">-65</Member>
+        <Member comment="" description="" name="LTEDLSNRTarget_IR92" sizeOf="1" type="int8">110</Member>
+        <Member comment="" description="" name="Wifi_RoveOut_IR92" sizeOf="1" type="int8">-85</Member>
+        <Member comment="" description="" name="Wifi_RoveIn_IR92" sizeOf="1" type="int8">-65</Member>
+        <Member comment="" description="" name="Wifi_Repoint_IR92" sizeOf="1" type="int8">-75</Member>
+        <Member comment="" description="Bytes reserved for future versions" name="ReservedBytes" sizeOf="1" type="uint7576" />
+    </NvEfsItemData>
+    <NvEfsItemData id="73851" name="XCAPConfigItem" fixed_size="1024" category="IMS" comment="" description="IMS XCAP Configuration Parameters" fullpathname="/nv/item_files/ims/qp_ims_xcap_common_config" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version" name="Version" sizeOf="1" type="uint8" />
+        <Member comment="" description="XCAP APN Name on WWAN RAT" name="cAPNWWAN" sizeOf="100" type="string">xcap</Member>
+        <Member comment="" description="XCAP IP Address Type on WWAN RAT" name="iIPTypeWWAN" sizeOf="1" type="uint8">4</Member>
+        <Member comment="" description="XCAP APN Name on WLAN RAT" name="" sizeOf="100" type="string">xcap</Member>
+        <Member comment="" description="XCAP IP Address Type on WLAN RAT" name="" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="XCAP Valid RAT Mask Value" name="iRatMaskValue" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="XCAP GBA Is Enabled" name="eGBAMode" sizeOf="1" type="uint8">2</Member>
+        <Member comment="" description="XCAP TLS connection over Ua Interface" name="eGBAUaTLSMode" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="User Agent for request over Ub interface" name="cUbUserAgent" sizeOf="129" type="string" />
+        <Member comment="" description="Bytes reserved for future Versions" name="ReservedBytes" sizeOf="1" type="uint686" />
+    </NvEfsItemData>
+    <NvEfsItemData id="73852" name="UtConfigItem" fixed_size="1024" category="IMS" comment="" description="IMS Ut Configuration Parameters" fullpathname="/nv/item_files/ims/qp_ims_ut_config_item" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version" name="Version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="Ut XCAP Server Name" name="cXCAPServerName" sizeOf="256" type="string">xcap.ims.mnc010.mcc510.pub.3gppnetwork.org:80</Member>
+        <Member comment="" description="Ut XCAP Application ID" name="cXCAPApplicationUID" sizeOf="256" type="string">simservs.ngn.etsi.org</Member>
+        <Member comment="" description="Ut XCAP Media Element Usage" name="eMediaElementUsage" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="XCAP Empty SIB Tag Usage" name="eEmptySIBUsage" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="User Agent for request over Ua interface" name="cUaUserAgent" sizeOf="256" type="string" />
+        <Member comment="" description="Bytes reserved for future Versions" name="ReservedBytes" sizeOf="1" type="uint253"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73853" name="XCAPPrivateConfigItem" fixed_size="1024" category="IMS" comment="" description="IMS XCAP Configuration Parameters" fullpathname="/nv/item_files/ims/qp_ims_xcap_private_config_item" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version" name="Version" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="IMS Registered PAURI" name="xcap.ims.mnc010.mcc510.pub.3gppnetwork.org" sizeOf="256" type="string" />
+        <Member comment="" description="Bytes reserved for future Versions" name="ReservedBytes" sizeOf="1" type="uint767"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73939" name="nr5g_bandpref" category="MMode" comment="" description="NR5G band preference" fullpathname="/nv/item_files/modem/mmode/nr5g_bandpref" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="bits_1_64" sizeOf="1" type="uint64">0</Member>
+        <Member comment="" description="" name="bits_65_128" sizeOf="1" type="uint64">0</Member>
+        <Member comment="" description="" name="bits_129_192" sizeOf="1" type="uint64">0</Member>
+        <Member comment="" description="" name="bits_193_256" sizeOf="1" type="uint64">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="73971" name="ant_div_switch_master" category="MCS" comment="" description="NV for ASDIV master configuration setting for each RAT" fullpathname="/nv/item_files/mcs/trm/ant_div_switch_master" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="Version" name="Version" sizeOf="1" type="uint8">2</Member>
+        <Member comment="" description="" name="Master_NV_1X" sizeOf="1" type="uint8">
+            <Enum value="0" name="DO NOT CARE"></Enum>
+            <Enum value="1" name="ENABLE"></Enum>
+            <Enum value="2" name="DISABLE"></Enum>
+        </Member>
+        <Member comment="" description="" name="Master_NV_HDR" sizeOf="1" type="uint8">
+            <Enum value="0" name="DO NOT CARE"></Enum>
+            <Enum value="1" name="ENABLE"></Enum>
+            <Enum value="2" name="DISABLE"></Enum>
+        </Member>
+        <Member comment="" description="" name="Master_NV_GSM" sizeOf="1" type="uint8">
+            <Enum value="0" name="DO NOT CARE"></Enum>
+            <Enum value="1" name="ENABLE"></Enum>
+            <Enum value="2" name="DISABLE"></Enum>
+        </Member>
+        <Member comment="" description="" name="Master_NV_WCDMA" sizeOf="1" type="uint8">
+            <Enum value="0" name="DO NOT CARE"></Enum>
+            <Enum value="1" name="ENABLE"></Enum>
+            <Enum value="2" name="DISABLE"></Enum>
+        </Member>
+        <Member comment="" description="" name="Master_NV_TDSCDMA" sizeOf="1" type="uint8">
+            <Enum value="0" name="DO NOT CARE"></Enum>
+            <Enum value="1" name="ENABLE"></Enum>
+            <Enum value="2" name="DISABLE"></Enum>
+        </Member>
+        <Member comment="" description="" name="Master_NV_LTE" sizeOf="1" type="uint8">
+            <Enum value="0" name="DO NOT CARE"></Enum>
+            <Enum value="1" name="ENABLE"></Enum>
+            <Enum value="2" name="DISABLE"></Enum>
+        </Member>
+        <Member comment="" description="" name="Master_NV_WLAN" sizeOf="1" type="uint8">
+            <Enum value="0" name="DO NOT CARE"></Enum>
+            <Enum value="1" name="ENABLE"></Enum>
+            <Enum value="2" name="DISABLE"></Enum>
+        </Member>
+        <Member comment="" description="" name="Master_NV_NR5G" sizeOf="1" type="uint8">
+            <Enum value="0" name="DO NOT CARE"></Enum>
+            <Enum value="1" name="ENABLE"></Enum>
+            <Enum value="2" name="DISABLE"></Enum>
+        </Member>
+        <Member comment="" description="" name="Master_NV_NR5G_NSA" sizeOf="1" type="uint8">
+            <Enum value="0" name="DO NOT CARE"></Enum>
+            <Enum value="1" name="ENABLE"></Enum>
+            <Enum value="2" name="DISABLE"></Enum>
+        </Member>
+        <Member comment="" description="" name="reserved" sizeOf="4" type="uint8">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="74087" name="nr5g_bandpref" category="MMode" comment="" description="NR band preference" fullpathname="/nv/item_files/modem/mmode/nr_band_pref" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member name="sa_bits_1_64" description="" comment="" sizeOf="1" type="uint64">
+            <Bitmask bit="0" name="NR5G B1"></Bitmask>
+            <Bitmask bit="1" name="NR5G B2"></Bitmask>
+            <Bitmask bit="2" name="NR5G B3"></Bitmask>
+            <Bitmask bit="4" name="NR5G B5"></Bitmask>
+            <Bitmask bit="6" name="NR5G B7"></Bitmask>
+            <Bitmask bit="7" name="NR5G B8"></Bitmask>
+            <Bitmask bit="11" name="NR5G B12"></Bitmask>
+            <Bitmask bit="12" name="NR5G B13"></Bitmask>
+            <Bitmask bit="13" name="NR5G B14"></Bitmask>
+            <Bitmask bit="17" name="NR5G B18"></Bitmask>
+            <Bitmask bit="19" name="NR5G B20"></Bitmask>
+            <Bitmask bit="24" name="NR5G B25"></Bitmask>
+            <Bitmask bit="25" name="NR5G B26"></Bitmask>
+            <Bitmask bit="27" name="NR5G B28"></Bitmask>
+            <Bitmask bit="28" name="NR5G B29"></Bitmask>
+            <Bitmask bit="29" name="NR5G B30"></Bitmask>
+            <Bitmask bit="33" name="NR5G B34"></Bitmask>
+            <Bitmask bit="37" name="NR5G B38"></Bitmask>
+            <Bitmask bit="38" name="NR5G B39"></Bitmask>
+            <Bitmask bit="39" name="NR5G B40"></Bitmask>
+            <Bitmask bit="40" name="NR5G B41"></Bitmask>
+            <Bitmask bit="47" name="NR5G B48"></Bitmask>
+            <Bitmask bit="49" name="NR5G B50"></Bitmask>
+            <Bitmask bit="50" name="NR5G B51"></Bitmask>
+            <Bitmask bit="52" name="NR5G B53"></Bitmask>
+        </Member>
+        <Member name="sa_bits_65_128" description="" comment="" sizeOf="1" type="uint64">
+            <Bitmask bit="0" name="NR5G B65"></Bitmask>
+            <Bitmask bit="1" name="NR5G B66"></Bitmask>
+            <Bitmask bit="5" name="NR5G B70"></Bitmask>
+            <Bitmask bit="6" name="NR5G B71"></Bitmask>
+            <Bitmask bit="9" name="NR5G B74"></Bitmask>
+            <Bitmask bit="10" name="NR5G B75"></Bitmask>
+            <Bitmask bit="11" name="NR5G B76"></Bitmask>
+            <Bitmask bit="12" name="NR5G B77"></Bitmask>
+            <Bitmask bit="13" name="NR5G B78"></Bitmask>
+            <Bitmask bit="14" name="NR5G B79"></Bitmask>
+            <Bitmask bit="15" name="NR5G B80"></Bitmask>
+            <Bitmask bit="16" name="NR5G B81"></Bitmask>
+            <Bitmask bit="17" name="NR5G B82"></Bitmask>
+            <Bitmask bit="18" name="NR5G B83"></Bitmask>
+            <Bitmask bit="19" name="NR5G B84"></Bitmask>
+            <Bitmask bit="20" name="NR5G B85"></Bitmask>
+            <Bitmask bit="21" name="NR5G B86"></Bitmask>
+        </Member>
+        <Member comment="" description="" name="sa_bits_129_192" sizeOf="1" type="uint64">0</Member>
+        <Member comment="" description="" name="sa_bits_193_256" sizeOf="1" type="uint64">0</Member>
+        <Member name="sa_bits_257_320" description="" comment="" sizeOf="1" type="uint64">
+            <Bitmask bit="0" name="NR5G B257"></Bitmask>
+            <Bitmask bit="1" name="NR5G B258"></Bitmask>
+            <Bitmask bit="2" name="NR5G B259"></Bitmask>
+            <Bitmask bit="3" name="NR5G B260"></Bitmask>
+            <Bitmask bit="4" name="NR5G B261"></Bitmask>
+        </Member>
+        <Member comment="" description="" name="sa_bits_321_384" sizeOf="1" type="uint64">0</Member>
+        <Member comment="" description="" name="sa_bits_385_448" sizeOf="1" type="uint64">0</Member>
+        <Member comment="" description="" name="sa_bits_449_512" sizeOf="1" type="uint64">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="74142" name="band_priority_list_v2" category="IMS" comment="" description="set prioritized band list for LFS/FFS" fullpathname="/nv/item_files/modem/lte/rrc/efs/band_priority_list_v2" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="array" sizeOf="64" type="uint16">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="74213" name="nr_nsa_band_pref" category="MMode" comment="" description="NR band preference" fullpathname="/nv/item_files/modem/mmode/nr_nsa_band_pref" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member name="nsa_bits_1_64" description="" comment="" sizeOf="1" type="uint64">
+            <Bitmask bit="0" name="NR5G B1"></Bitmask>
+            <Bitmask bit="1" name="NR5G B2"></Bitmask>
+            <Bitmask bit="2" name="NR5G B3"></Bitmask>
+            <Bitmask bit="4" name="NR5G B5"></Bitmask>
+            <Bitmask bit="6" name="NR5G B7"></Bitmask>
+            <Bitmask bit="7" name="NR5G B8"></Bitmask>
+            <Bitmask bit="11" name="NR5G B12"></Bitmask>
+            <Bitmask bit="12" name="NR5G B13"></Bitmask>
+            <Bitmask bit="13" name="NR5G B14"></Bitmask>
+            <Bitmask bit="17" name="NR5G B18"></Bitmask>
+            <Bitmask bit="19" name="NR5G B20"></Bitmask>
+            <Bitmask bit="24" name="NR5G B25"></Bitmask>
+            <Bitmask bit="25" name="NR5G B26"></Bitmask>
+            <Bitmask bit="27" name="NR5G B28"></Bitmask>
+            <Bitmask bit="28" name="NR5G B29"></Bitmask>
+            <Bitmask bit="29" name="NR5G B30"></Bitmask>
+            <Bitmask bit="33" name="NR5G B34"></Bitmask>
+            <Bitmask bit="37" name="NR5G B38"></Bitmask>
+            <Bitmask bit="38" name="NR5G B39"></Bitmask>
+            <Bitmask bit="39" name="NR5G B40"></Bitmask>
+            <Bitmask bit="40" name="NR5G B41"></Bitmask>
+            <Bitmask bit="47" name="NR5G B48"></Bitmask>
+            <Bitmask bit="49" name="NR5G B50"></Bitmask>
+            <Bitmask bit="50" name="NR5G B51"></Bitmask>
+            <Bitmask bit="52" name="NR5G B53"></Bitmask>
+        </Member>
+        <Member name="nsa_bits_65_128" description="" comment="" sizeOf="1" type="uint64">
+            <Bitmask bit="0" name="NR5G B65"></Bitmask>
+            <Bitmask bit="1" name="NR5G B66"></Bitmask>
+            <Bitmask bit="5" name="NR5G B70"></Bitmask>
+            <Bitmask bit="6" name="NR5G B71"></Bitmask>
+            <Bitmask bit="9" name="NR5G B74"></Bitmask>
+            <Bitmask bit="10" name="NR5G B75"></Bitmask>
+            <Bitmask bit="11" name="NR5G B76"></Bitmask>
+            <Bitmask bit="12" name="NR5G B77"></Bitmask>
+            <Bitmask bit="13" name="NR5G B78"></Bitmask>
+            <Bitmask bit="14" name="NR5G B79"></Bitmask>
+            <Bitmask bit="15" name="NR5G B80"></Bitmask>
+            <Bitmask bit="16" name="NR5G B81"></Bitmask>
+            <Bitmask bit="17" name="NR5G B82"></Bitmask>
+            <Bitmask bit="18" name="NR5G B83"></Bitmask>
+            <Bitmask bit="19" name="NR5G B84"></Bitmask>
+            <Bitmask bit="20" name="NR5G B85"></Bitmask>
+            <Bitmask bit="21" name="NR5G B86"></Bitmask>
+        </Member>
+        <Member comment="" description="" name="nsa_bits_129_192" sizeOf="1" type="uint64">0</Member>
+        <Member comment="" description="" name="nsa_bits_193_256" sizeOf="1" type="uint64">0</Member>
+        <Member name="nsa_bits_257_320" description="" comment="" sizeOf="1" type="uint64">
+            <Bitmask bit="0" name="NR5G B257"></Bitmask>
+            <Bitmask bit="1" name="NR5G B258"></Bitmask>
+            <Bitmask bit="2" name="NR5G B259"></Bitmask>
+            <Bitmask bit="3" name="NR5G B260"></Bitmask>
+            <Bitmask bit="4" name="NR5G B261"></Bitmask>
+        </Member>
+        <Member comment="" description="" name="nsa_bits_321_384" sizeOf="1" type="uint64">0</Member>
+        <Member comment="" description="" name="nsa_bits_385_448" sizeOf="1" type="uint64">0</Member>
+        <Member comment="" description="" name="nsa_bits_449_512" sizeOf="1" type="uint64">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="80000" name="mode_pref" description="Phone Mode Preference" comment="" category="MMode" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/mmode/mode_pref">
+        <Member name="mode_pref" description="" comment="" sizeOf="1" type="uint32">
+            <Bitmask bit="0" name="CDMA"></Bitmask>
+            <Bitmask bit="1" name="HDR"></Bitmask>
+            <Bitmask bit="2" name="GSM"></Bitmask>
+            <Bitmask bit="3" name="WCDMA"></Bitmask>
+            <Bitmask bit="4" name="LTE"></Bitmask>
+            <Bitmask bit="5" name="TDS"></Bitmask>
+            <Bitmask bit="6" name="NR5G"></Bitmask>
+            <Bitmask bit="7" name="GPS"></Bitmask>
+        </Member>
+    </NvEfsItemData>
+    <!-- legal efs end -->
+
+    <!-- RFNV start -->
+    <NvEfsItemData id="30000" name="rf_card" zip="1" description="rf card config" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/rfnv/00028967">
+        <Member name="version" description="" comment="" sizeOf="1" type="uint32"></Member>
+        <Member name="hardware_id" description="" comment="" sizeOf="1" type="uint32"></Member>
+        <Member name="feature_set_id" description="" comment="" sizeOf="1" type="uint32"></Member>
+        <Member name="hardware_version" description="" comment="" sizeOf="1" type="uint32"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="30001" name="band_black_white_list" zip="1" description="Band control" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/rfnv/00029002">
+        <Member name="NV_Enable" description="" comment="" sizeOf="1" type="uint8">
+            <Enum value="0" name="This NV is ignored"></Enum>
+            <Enum value="1" name="This NV is blacklist"></Enum>
+            <Enum value="2" name="This NV is whitelist"></Enum>
+        </Member>
+        <Member name="null" description="" comment="" sizeOf="nv_efs_loop_end!0~50" type="null"></Member>
+        <Member name="RF_TECH" description="" comment="" sizeOf="1" type="uint8">
+            <Enum value="1" name="CDMA"></Enum>
+            <Enum value="2" name="GSM"></Enum>
+            <Enum value="3" name="LTE"></Enum>
+            <Enum value="4" name="TDSCDMA"></Enum>
+            <Enum value="5" name="WCDMA"></Enum>
+            <Enum value="255" name="ALL"></Enum>
+        </Member>
+        <Member name="RF_BAND" description="" comment="" sizeOf="1" type="uint16"></Member>
+        <Member name="PATH_TYPE" description="" comment="" sizeOf="1" type="uint8">
+            <Enum value="1" name="Rx"></Enum>
+            <Enum value="2" name="Tx"></Enum>
+            <Enum value="255" name="ALL"></Enum>
+        </Member>
+        <Member name="PATH_ID" description="" comment="" sizeOf="1" type="uint32">4294967295</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="26693" name="atuner_algo" zip="0" description="rf card config" comment="" category="Factory" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/rfnv/00026693">
+        <Member name="atuner_algo" description="" comment="" sizeOf="1" type="uint8">6</Member>
+    </NvEfsItemData>
+    <!-- RFNV end -->
+
+    <!-- EFS item with cust nv id start -->
+    <NvEfsItemData id="20001" name="carrier_policy.xml" category="mmmode" comment="" description="" fullpathname="/policyman/carrier_policy.xml" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="carrier_policy.xml" sizeOf="no_limit_string" type="string">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20002" name="post.xml" category="mmmode" comment="" description="" fullpathname="/policyman/post.xml" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="post.xml" sizeOf="no_limit_string" type="string">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20003" name="pci_lock" category="LTE" comment="" description="" fullpathname="/nv/item_files/modem/lte/rrc/csp/pci_lock" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="earfcn" sizeOf="1" type="uint16">0</Member>
+        <Member comment="" description="" name="pci" sizeOf="1" type="uint16">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20004" name="cell_lock_list" fixed_size="244" category="LTE" comment="" description="This config is used to lock pci-earfcn for LTE, you can set 'count' to value(>=1) to config cell list." fullpathname="/nv/item_files/modem/lte/rrc/efs/cell_lock_list" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="count[cell_lock_list]" sizeOf="2.nv_efs_count_type!0~16" type="uint32">0</Member>
+        <Member comment="" description="" name="pci" sizeOf="1" type="uint32">168</Member>
+        <Member comment="" description="" name="earfcn" sizeOf="1" type="uint32">38950</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20005" name="rf_display_config" category="RF" comment="" description="" fullpathname="/nv/item_files/modem/xiaomi/rf_display_config" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="min_interval[s]" sizeOf="1" type="uint8">1</Member>
+        <Member comment="" description="" name="default_mipi[Hz]" sizeOf="1" type="uint64">1100000000</Member>
+        <Member name="null" description="" comment="" sizeOf="nv_efs_loop_end!0~255" type="null"></Member>
+        <Member comment="" description="" name="rat" sizeOf="1" type="uint8">1
+            <Enum value="1" name="CDMA"></Enum>
+            <Enum value="2" name="HDR"></Enum>
+            <Enum value="4" name="GSM"></Enum>
+            <Enum value="5" name="WCDMA"></Enum>
+            <Enum value="8" name="LTE"></Enum>
+            <Enum value="9" name="TDS"></Enum>
+        </Member>
+        <Member comment="" description="" name="band" sizeOf="1" type="uint16">0
+            <Enum value="0" name="CDMA_BC0"></Enum>
+            <Enum value="1" name="CDMA_BC1"></Enum>
+            <Enum value="43" name="GSM_850"></Enum>
+            <Enum value="44" name="GSM_900_EXTENDED"></Enum>
+            <Enum value="45" name="GSM_900_PRIMARY"></Enum>
+            <Enum value="46" name="GSM_900_RAILWAYS"></Enum>
+            <Enum value="47" name="GSM_1800"></Enum>
+            <Enum value="48" name="GSM_1900"></Enum>
+            <Enum value="80" name="WCDMA_2100"></Enum>
+            <Enum value="81" name="WCDMA_PCS_1900"></Enum>
+            <Enum value="82" name="WCDMA_DCS_1800"></Enum>
+            <Enum value="83" name="WCDMA_1700_US"></Enum>
+            <Enum value="84" name="WCDMA_850"></Enum>
+            <Enum value="85" name="WCDMA_800"></Enum>
+            <Enum value="86" name="WCDMA_2600"></Enum>
+            <Enum value="87" name="WCDMA_900"></Enum>
+            <Enum value="88" name="WCDMA_1700_JAPAN"></Enum>
+            <Enum value="90" name="WCDMA_1500_JAPAN"></Enum>
+            <Enum value="91" name="WCDMA_850_JAPAN"></Enum>
+            <Enum value="120" name="LTE_B1"></Enum>
+            <Enum value="121" name="LTE_B2"></Enum>
+            <Enum value="122" name="LTE_B3"></Enum>
+            <Enum value="123" name="LTE_B4"></Enum>
+            <Enum value="124" name="LTE_B5"></Enum>
+            <Enum value="125" name="LTE_B6"></Enum>
+            <Enum value="126" name="LTE_B7"></Enum>
+            <Enum value="127" name="LTE_B8"></Enum>
+            <Enum value="128" name="LTE_B9"></Enum>
+            <Enum value="129" name="LTE_B10"></Enum>
+            <Enum value="130" name="LTE_B11"></Enum>
+            <Enum value="131" name="LTE_B12"></Enum>
+            <Enum value="132" name="LTE_B13"></Enum>
+            <Enum value="133" name="LTE_B14"></Enum>
+            <Enum value="134" name="LTE_B17"></Enum>
+            <Enum value="135" name="LTE_B33"></Enum>
+            <Enum value="136" name="LTE_B34"></Enum>
+            <Enum value="137" name="LTE_B35"></Enum>
+            <Enum value="138" name="LTE_B36"></Enum>
+            <Enum value="139" name="LTE_B37"></Enum>
+            <Enum value="140" name="LTE_B38"></Enum>
+            <Enum value="141" name="LTE_B39"></Enum>
+            <Enum value="142" name="LTE_B40"></Enum>
+            <Enum value="143" name="LTE_B18"></Enum>
+            <Enum value="144" name="LTE_B19"></Enum>
+            <Enum value="145" name="LTE_B20"></Enum>
+            <Enum value="146" name="LTE_B21"></Enum>
+            <Enum value="147" name="LTE_B24"></Enum>
+            <Enum value="148" name="LTE_B25"></Enum>
+            <Enum value="149" name="LTE_B41"></Enum>
+            <Enum value="150" name="LTE_B42"></Enum>
+            <Enum value="151" name="LTE_B43"></Enum>
+            <Enum value="152" name="LTE_B23"></Enum>
+            <Enum value="153" name="LTE_B26"></Enum>
+            <Enum value="154" name="LTE_B32"></Enum>
+            <Enum value="155" name="LTE_B125"></Enum>
+            <Enum value="156" name="LTE_B126"></Enum>
+            <Enum value="157" name="LTE_B127"></Enum>
+            <Enum value="158" name="LTE_B28"></Enum>
+            <Enum value="159" name="LTE_B29"></Enum>
+            <Enum value="160" name="LTE_B30"></Enum>
+            <Enum value="161" name="LTE_B66"></Enum>
+            <Enum value="162" name="LTE_B250"></Enum>
+            <Enum value="163" name="LTE_B46"></Enum>
+            <Enum value="164" name="LTE_B27"></Enum>
+            <Enum value="165" name="LTE_B31"></Enum>
+            <Enum value="166" name="LTE_B71"></Enum>
+            <Enum value="167" name="LTE_B47"></Enum>
+            <Enum value="168" name="LTE_B48"></Enum>
+            <Enum value="169" name="LTE_B67"></Enum>
+            <Enum value="170" name="LTE_B68"></Enum>
+            <Enum value="171" name="LTE_B49"></Enum>
+            <Enum value="172" name="LTE_B85"></Enum>
+            <Enum value="173" name="LTE_B72"></Enum>
+            <Enum value="174" name="LTE_B73"></Enum>
+            <Enum value="200" name="TDS_B34"></Enum>
+            <Enum value="201" name="TDS_B39"></Enum>
+        </Member>
+        <Member comment="" description="" name="channel_start" sizeOf="1" type="uint32">4294967295</Member>
+        <Member comment="" description="" name="channel_end" sizeOf="1" type="uint32">4294967295</Member>
+        <Member comment="" description="" name="mipi[Hz]" sizeOf="1" type="uint64">1106000000</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20006" name="rf_print_mask" category="RF" comment="" description="" fullpathname="/nv/item_files/modem/xiaomi/rf_print_mask" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="rf_print" sizeOf="1" type="uint32">0
+            <Bitmask bit="0" name="PRINT_MAIN"></Bitmask>
+            <Bitmask bit="1" name="PRINT_PATH"></Bitmask>
+            <Bitmask bit="2" name="PRINT_DISPLAY"></Bitmask>
+            <Bitmask bit="3" name="PRINT_LOOP"></Bitmask>
+        </Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20007" name="rf_ant_device_config" category="RF" comment="" description="" fullpathname="/nv/item_files/modem/xiaomi/rf_ant_device_config" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member name="null" description="" comment="" sizeOf="nv_efs_loop_end!0~255" type="null"></Member>
+        <Member comment="" description="" name="phy_dev_instance" sizeOf="1" type="uint8">0</Member>
+        <Member comment="" description="" name="default_usid" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="product_rev" sizeOf="1" type="uint32">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20008" name="rf_task_delay_flag" category="RF" comment="" description="" fullpathname="/nv/item_files/modem/xiaomi/rf_task_delay_flag" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="rf_task_delay[0~30][s]" sizeOf="1" type="uint8">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20009" name="qmi_print_flag" category="QMI" comment="" description="" fullpathname="/nv/item_files/modem/xiaomi/qmi_print_flag" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="qmi_print" sizeOf="1" type="bool">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20010" name="rf_display_repeat_rpt_flag" category="RF" comment="" description="" fullpathname="/nv/item_files/modem/xiaomi/rf_display_repeat_rpt_flag" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="rf_display_repeat_rpt" sizeOf="1" type="bool">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20011" name="mcfg_sel_db.xml" category="mcfg" comment="" description="" fullpathname="/nv/item_files/mcfg/mcfg_sel_db.xml" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="mcfg_sel_db.xml" sizeOf="no_limit_string" type="string">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20012" name="rfs_cust_params" category="mcfg" comment="" description="" fullpathname="/nv/item_files/mcfg/rfs_cust_params" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="rfs_params_ver" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="discover_timer_timeout[ms]" sizeOf="1" type="uint32">10000</Member>
+        <Member comment="" description="" name="retry_mbn_loading" sizeOf="1" type="uint8">2</Member>
+        <Member comment="" description="" name="retry_remote_inaccessible" sizeOf="1" type="uint8">3</Member>
+        <Member comment="" description="" name="rfs_path_discover" sizeOf="180" type="string">/readonly/firmware/image/modem_pr/mcfg/configs</Member>
+        <Member comment="" description="" name="oem_hw_path_info" sizeOf="180" type="string">/readonly/firmware/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw.txt</Member>
+        <Member comment="" description="" name="oem_sw_path_info" sizeOf="180" type="string">/readonly/firmware/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw.txt</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20013" name="mcfg_rfs_sw_digest_version" category="mcfg" comment="" description="" fullpathname="/nv/item_files/mcfg/mcfg_rfs_sw_digest_version" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="mcfg_rfs_sw_digest_version" sizeOf="no_limit_string" type="string">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20014" name="last_iccid" category="mcfg" comment="" description="" fullpathname="/nv/item_files/mcfg/cards/last_iccid" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="last_iccid" sizeOf="no_limit_string" type="string">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20015" name="mcfg_rfs_hw_digest_version" category="mcfg" comment="" description="" fullpathname="/nv/item_files/mcfg/mcfg_rfs_hw_digest_version" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="mcfg_rfs_hw_digest_version" sizeOf="no_limit_string" type="string">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20016" name="xiaomi_cdma_enable" category="mmode" comment="" description="" fullpathname="/nv/item_files/modem/mmode/xiaomi_cdma_enable" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="xiaomi_cdma_enable" sizeOf="1" type="uint8">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20017" name="mcfg_setting" category="mcfg" comment="" description="" fullpathname="/nv/item_files/mcfg/mcfg_setting" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="mcfg_setting" sizeOf="no_limit_string" type="string">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20018" name="mcfg_setting_1" category="mcfg" comment="" description="" fullpathname="/nv/item_files/mcfg/mcfg_setting_1" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="mcfg_setting_1" sizeOf="no_limit_string" type="string">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20019" name="LTE_RX" category="LTE" comment="" description="" fullpathname="/nv/item_files/modem/lte/ML1/rx_select" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="rx_select" sizeOf="1" type="uint8">15
+            <Bitmask bit="0" name="Rx0"></Bitmask>
+            <Bitmask bit="1" name="Rx1"></Bitmask>
+            <Bitmask bit="2" name="Rx2"></Bitmask>
+            <Bitmask bit="3" name="Rx3"></Bitmask>
+        </Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20020" name="hw_mbn_test_only_in_dsds" category="mcfg" comment="" description="" fullpathname="/nv/item_files/modem/xiaomi/hw_mbn_test_only_in_dsds" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member name="hw_mbn_test_only_in_dsds" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20021" name="ext_cust_params" category="mcfg" comment="" description="" fullpathname="/nv/item_files/mcfg/ext_cust_params" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="rfs_params_ver" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="discover_timer_timeout[ms]" sizeOf="1" type="uint32">10000</Member>
+        <Member comment="" description="" name="retry_mbn_loading" sizeOf="1" type="uint8">2</Member>
+        <Member comment="" description="" name="retry_remote_inaccessible" sizeOf="1" type="uint8">3</Member>
+        <Member comment="" description="" name="rfs_path_discover" sizeOf="180" type="string">/readonly/firmware/image/modem_pr/mcfg/configs</Member>
+        <Member comment="" description="" name="oem_hw_path_info" sizeOf="180" type="string">/readonly/firmware/image/modem_pr/mcfg/configs/mcfg_hw/oem_hw.txt</Member>
+        <Member comment="" description="" name="oem_sw_path_info" sizeOf="180" type="string">/readonly/firmware/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw.txt</Member>
+        <Member comment="" description="" name="reserved" sizeOf="1" type="uint64">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20022" name="enable_mcfg_efslogging" category="mcfg" comment="" description="" fullpathname="/enable_mcfg_efslogging" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member name="enable_mcfg_efslogging" description="" comment="" sizeOf="1" type="uint8">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20023" name="mcfg_debug.log" category="mcfg" comment="" description="" fullpathname="/mcfg_debug.log" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="mcfg_debug.log" sizeOf="no_limit_string" type="string">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20024" name="pci_lock_info" category="NR" comment="" description="This config is used to lock a physical layer cell ID (PCI) for NR during camping the device when operating in standalone (SA) mode. Mobility procedures such as reselection or redirection or handover is not allowed. This config is not valid when operating in NSA mode." fullpathname="/nv/item_files/modem/nr5g/RRC/pci_lock_info" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="pci" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="frequency" sizeOf="1" type="uint32">0</Member>
+        <Member comment="" description="" name="SCS" sizeOf="1" type="uint16">0
+            <Enum value="0" name="15 kHz"></Enum>
+            <Enum value="1" name="30 kHz"></Enum>
+            <Enum value="2" name="60 kHz"></Enum>
+            <Enum value="3" name="120 kHz"></Enum>
+        </Member>
+        <Member comment="" description="" name="band" sizeOf="1" type="uint16">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20025" name="mbn_update_count" category="mcfg" comment="" description="" fullpathname="/nv/item_files/mcfg/mbn_update_count" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member name="mbn_update_count" description="" comment="" sizeOf="1" type="uint32">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20026" name="factory_nv_update_count" category="mcfg" comment="" description="" fullpathname="/nv/item_files/mcfg/factory_nv_update_count" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member name="factory_nv_update_count" description="" comment="" sizeOf="1" type="uint32">1</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20027" name="device_config.xml" category="mmmode" comment="" description="" fullpathname="/policyman/device_config.xml" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="device_config.xml" sizeOf="no_limit_string" type="string">0</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20028" name="hydra_features" category="hydra" comment="" description="" fullpathname="/hydra/hydra_features" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="hydra_features" sizeOf="no_limit_string" type="string">ENABLE_STATS_CMD_PROCESS</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20029" name="mcfg_efs_space_limit" category="mcfg" comment="" description="" fullpathname="/nv/item_files/mcfg/mcfg_efs_space_limit" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member comment="" description="" name="mcfg_efs_space_limit[Kb]" sizeOf="1" type="uint16">256</Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="20030" name="single_sim_flag" category="mcfg" comment="" description="" fullpathname="/nv/item_files/modem/xiaomi/single_sim_flag" mcfgAttributes="0x19" mcfgVariant="2" subscription_mask="0x07">
+        <Member name="single_sim_flag" description="" comment="" sizeOf="1" type="uint32">1</Member>
+    </NvEfsItemData>
+    <!-- EFS item with cust nv id end -->
+
+    <!--
+band，频点，cid，QEZLab
+bitmask
+441 946 2954 tds的 65633
+RFNV
+28967 rf_card
+28874 ca
+29002 list
+-->
+
+    <!-- efs to be done start -->
+    <NvEfsFile name="atcop_cops_auto_mode.txt" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/ds/atcop/atcop_cops_auto_mode.txt" buildPath="modem_proc/datamodem/datacfg/efs/cmcc/lab/atcop_cops_auto_mode.txt" />
+    <NvEfsFile name="ds_dsd_attach_profile.txt" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/data/ds_dsd_attach_profile.txt" buildPath="modem_proc/datamodem/datacfg/efs/cmcc/ds_dsd_attach_profile.txt" />
+    <NvEfsFile name="Profile1" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/Data_Profiles/Profile1" buildPath="modem_proc/datamodem/datacfg/efs/cmcc/Profile1" />
+    <NvEfsFile name="Profile2" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/Data_Profiles/Profile2" buildPath="modem_proc/datamodem/datacfg/efs/cmcc/Profile2" />
+    <NvEfsFile name="Profile3" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/Data_Profiles/Profile3" buildPath="modem_proc/datamodem/datacfg/efs/cmcc/Profile3" />
+    <NvEfsFile name="Profile4" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/Data_Profiles/Profile4" buildPath="modem_proc/datamodem/datacfg/efs/cmcc/Profile4" />
+    <NvEfsFile name="Profile5" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/Data_Profiles/Profile5" buildPath="modem_proc/datamodem/datacfg/efs/cmcc/Profile5" />
+    <NvEfsFile name="g2l_blind_redir_after_csfb_control" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/geran/grr/g2l_blind_redir_after_csfb_control" buildPath="modem_proc/geran/configs/efs_files/cmcc/g2l_blind_redir_after_csfb_control" />
+    <NvEfsFile name="g2l_blind_redir_after_srvcc_control" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/geran/grr/g2l_blind_redir_after_srvcc_control" buildPath="modem_proc/geran/configs/efs_files/cmcc/g2l_blind_redir_after_srvcc_control" />
+    <NvEfsFile name="read_pch_during_transfer_whitelist" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/geran/read_pch_during_transfer_whitelist" buildPath="modem_proc/geran/configs/efs_files/cmcc/read_pch_during_transfer_whitelist" />
+    <NvEfsFile name="add_last_serv_cell_csfb_whitelist" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/geran/add_last_serv_cell_csfb_whitelist" buildPath="modem_proc/geran/configs/efs_files/cmcc/add_last_serv_cell_csfb_whitelist" />
+    <NvEfsFile name="hst_opt_white_list" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/geran/grr/hst_opt_white_list" buildPath="modem_proc/geran/configs/efs_files/cmcc/hst_opt_white_list" />
+    <NvEfsFile name="depriotize_gsm_cell" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/geran/grr/depriotize_gsm_cell" buildPath="modem_proc/geran/configs/efs_files/cmcc/depriotize_gsm_cell" />
+    <NvEfsFile name="CMCC_Lab_CA_root.cer" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/SUPL/CMCC_Lab_CA_root.cer" buildPath="modem_proc/gps/gnss_tools/config/efs_files/cmcc/lab/CMCC_Lab_CA_root.cer" />
+    <NvEfsFile name="GoogleSuplCertificateGeo.cer" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/SUPL/GoogleSuplCertificateGeo.cer" buildPath="modem_proc/gps/gnss_tools/config/efs_files/GoogleSuplCertificateGeo.cer" />
+    <NvEfsFile name="pref_freq_list" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/reg_files/modem/lte/rrc/csp/pref_freq_list" buildPath="modem_proc/lte/configs/efs_files/cmcc/pref_freq_list" />
+    <NvEfsFile name="lte_npg_list_size_conn" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/lte/rrc/lte_npg_list_size_conn" buildPath="modem_proc/lte/configs/efs_files/cmcc/lte_npg_list_size_conn" />
+    <NvEfsFile name="lte_npg_list_size_idle" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/lte/rrc/lte_npg_list_size_idle" buildPath="modem_proc/lte/configs/efs_files/cmcc/lte_npg_list_size_idle" />
+    <NvEfsFile name="incmon_rpg_npg_swap_threshold" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/lte/ML1/incmon_rpg_npg_swap_threshold" buildPath="modem_proc/lte/configs/efs_files/cmcc/incmon_rpg_npg_swap_threshold" />
+    <NvEfsFile name="q_rxlevmin_optmz" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/lte/rrc/q_rxlevmin_optmz" buildPath="modem_proc/lte/configs/efs_files/cmcc/q_rxlevmin_optmz" />
+    <NvEfsFile name="csfb_l2g_redir_optmz_enabled" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/lte/rrc/csfb_l2g_redir_optmz_enabled" buildPath="modem_proc/lte/configs/efs_files/cmcc/csfb_l2g_redir_optmz_enabled" />
+    <NvEfsFile name="skip_tds_info" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/lte/ML1/skip_tds_info" buildPath="modem_proc/lte/configs/efs_files/cmcc/skip_tds_info" />
+    <NvEfsFile name="diff_fdd_tdd_fgi_enable" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/lte/rrc/cap/diff_fdd_tdd_fgi_enable" buildPath="modem_proc/lte/configs/efs_files/cmcc/diff_fdd_tdd_fgi_enable" />
+    <NvEfsFile name="is_high_prio_sched_enabled" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/lte/ML1/is_high_prio_sched_enabled" buildPath="modem_proc/lte/configs/efs_files/cmcc/is_high_prio_sched_enabled" />
+    <NvEfsFile name="enable_hst_idle_mode_opt" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/lte/rrc/enable_hst_idle_mode_opt" buildPath="modem_proc/lte/configs/efs_files/cmcc/enable_hst_idle_mode_opt" />
+    <NvEfsFile name="lte_nas_ue_sec_capability" id="none" description="" comment="" category="Unknown" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/nas/lte_nas_ue_sec_capability" buildPath="modem_proc/mmcp/config/EFS_files/lte_nas_ue_sec_capability_china" />
+    <NvEfsFile name="rat_acq_order" id="none" description="" comment="" category="MMode" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/sd/rat_acq_order" buildPath="modem_proc/mmcp/config/EFS_files/lte_nas_ue_sec_capability_china" />
+    <NvEfsFile name="pbm_features_status_list" id="71535" description="index" comment="" category="PBM" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/pbm/features_status_list" buildPath="modem_proc/uim/config/efs_files/cmcc/pbm_features_status_list" />
+    <NvEfsFile name="pbm_nv_ecc_list_per_sub" id="73755" description="PBM ECC number list per SUB" comment="" category="PBM" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="4" targetPath="/nv/item_files/pbm/pbm_nv_ecc_list_per_sub" buildPath="modem_proc/uim/config/efs_files/cmcc/pbm_nv_ecc_list_per_sub" />
+    <NvEfsFile name="pbm_ecc_nums" id="67221" description="NV ECC numbers" comment="" category="PBM" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/pbm/pbm_ecc_nums" buildPath="modem_proc/uim/config/efs_files/cmcc/pbm_ecc_nums" />
+    <NvEfsFile name="pbm_nv_ecc_config" id="70242" description="To choose from where to read the NV ECC numbers" comment="" category="PBM" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/pbm/pbm_nv_ecc_config" buildPath="modem_proc/uim/config/efs_files/cmcc/pbm_nv_ecc_config" />
+    <NvEfsFile name="pbm_hardcoded_ecc_config" id="69736" description="index" comment="" category="PBM" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/pbm/pbm_hardcoded_ecc_config" buildPath="modem_proc/uim/config/efs_files/cmcc/pbm_hardcoded_ecc_config" />
+    <NvEfsFile name="pbm_hardcoded_ecc_list" id="69737" description="PBM Hardcoded ECC numbers" comment="" category="PBM" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/pbm/pbm_hardcoded_ecc_list" buildPath="modem_proc/uim/config/efs_files/cmcc/pbm_hardcoded_ecc_list" />
+    <NvEfsFile name="features_status_list" id="67211" description="To enable/disable MMGSDI Features" comment="" category="UIM" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" targetPath="/nv/item_files/modem/uim/mmgsdi/features_status_list" buildPath="modem_proc/uim/config/efs_files/cmcc/features_status_list" />
+    <!-- efs to be done end -->
+
+    <!-- test start -->
+    <NvEfsItemData id="77777" name="NvEfsDataTypeTest" description="" comment="" category="" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/xiaomi/nv_efs_data_type_test">
+        <Member name="unit8_test" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="nit8_test" description="" comment="" sizeOf="1" type="int8"></Member>
+        <Member name="unit16_test" description="" comment="" sizeOf="1" type="uint16"></Member>
+        <Member name="nit16_test" description="" comment="" sizeOf="1" type="int16"></Member>
+        <Member name="unit32_test" description="" comment="" sizeOf="1" type="uint32">1</Member>
+        <Member name="nit32_test" description="" comment="" sizeOf="1" type="int32"></Member>
+        <Member name="unit64_test" description="" comment="" sizeOf="1" type="uint64"></Member>
+        <Member name="nit64_test" description="" comment="" sizeOf="1" type="int64"></Member>
+        <Member name="string_test" description="" comment="" sizeOf="18" type="string"></Member>
+        <Member name="count_test1" description="" comment="" sizeOf="2.nv_efs_count_type!0~6" type="uint8"></Member>
+        <Member name="unit8[]_test" description="" comment="" sizeOf="3" type="uint8">0</Member>
+        <Member name="nit8_test1" description="" comment="" sizeOf="1" type="int8"></Member>
+        <Member name="nit8[]_test" description="" comment="" sizeOf="2" type="int8"></Member>
+        <Member name="unit64[]_test" description="" comment="" sizeOf="2" type="uint64"></Member>
+        <Member name="nit64[]_test" description="" comment="" sizeOf="3" type="int64"></Member>
+        <Member name="count_test2" description="" comment="" sizeOf="1.nv_efs_count_type!0~6" type="uint8"></Member>
+        <Member name="enum8_test" description="" comment="" sizeOf="1" type="int8">
+            <Enum value="-1" name="enum_-1"></Enum>
+            <Enum value="2" name="enum_2"></Enum>
+            <Enum value="4" name="enum_4"></Enum>
+            <Enum value="5" name="enum_5"></Enum>
+            <Enum value="6" name="enum_6"></Enum>
+            <Enum value="7" name="enum_7"></Enum>
+        </Member>
+        <Member name="enum32u_test" description="" comment="" sizeOf="1" type="uint32"></Member>
+        <Member name="ReservedBytes" description="Bytes reserved for future versions" comment="" sizeOf="1" type="uint7888"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="88888" name="nv_efs_data_type_test_no_limit_string" description="" comment="" category="" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/xiaomi/nv_efs_data_type_test_no_limit_string">
+        <Member name="no_limit_string_string_test" description="" comment="" sizeOf="no_limit_string" type="string"></Member>
+    </NvEfsItemData>
+    <NvEfsItemData id="99999" name="nv_efs_data_type_test_no_limit_string_fail" description="" comment="" category="" subscription_mask="0x07" mcfgAttributes="0x19" mcfgVariant="2" fullpathname="/nv/item_files/modem/xiaomi/nv_efs_data_type_test_no_limit_string_fail">
+        <Member name="unit8_test" description="" comment="" sizeOf="1" type="uint8">0</Member>
+        <Member name="no_limit_string_test" description="" comment="" sizeOf="no_limit_string" type="string"></Member>
+        <Member name="ReservedBytes" description="Bytes reserved for future versions" comment="" sizeOf="1" type="uint7888"></Member>
+    </NvEfsItemData>
+    <!-- test end -->
+
+</NvData>
